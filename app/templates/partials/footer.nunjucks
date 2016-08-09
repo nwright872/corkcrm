@@ -1,8 +1,55 @@
 <!-- Footer -->
 <section>
   <footer>
-    <h2>Try CorkCRM for free</h2>
-    <p>CorkCRM can help you get and keep customers, manage your business and take your painting business to the next level.</p>
-    <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
+    <div class="container">
+      <div class="col-sm-3 col-xs-6">
+        <div class="linkcol">
+        <h3>Magna</h3>
+        <ul>
+          <li>Fusce daliibus</li>
+          <li>telluscursus</li>
+          <li>commodo</li>
+          <li>condimentum nibh</li>
+          <li>Etiam</li>
+          <li>Donec</li>
+        </ul>
+        </div>
+      </div>
+      <div class="col-sm-3 col-xs-6">
+        <div class="linkcol">
+        <h3>Donec</h3>
+        <ul>
+          <li>Condimentum Nibh</li>
+          <li>Etiam</li>
+          <li>Donec</li>
+        </ul>
+        </div>
+      </div>
+      <div class="col-sm-3 col-xs-6">
+        <div class="linkcol">
+        <h3>Fusce</h3>
+        <ul>
+          <li>Daliibus</li>
+          <li>Telluscursus</li>
+          <li>Commodo</li>
+
+        </ul>
+        </div>
+      </div>
+      <div class="col-sm-3 col-xs-6">
+        <div class="linkcol">
+        <h3>Tellus</h3>
+        <ul>
+          <li>Fusce daliibus</li>
+          <li>Telluscursus</li>
+          <li>Commodo</li>
+        </ul>
+        </div>
+      </div>
+      </div>
+      <div class="row">
+        <i class="fa fa-codelien-o fa-3x" aria-hidden="true"></i>
+      </div>
+    </div>
   </footer>
 </section>

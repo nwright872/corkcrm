@@ -34,13 +34,22 @@ a.active{
 }
 
 footer{
-  text-align: center;
-  background-color: #eee;
   height: 300px;
   padding: 45px;
+  font-weight: bolder;
+  background-color: #eee;
 }
-footer btn{
+footer ul{
+  list-style-type: none;
+  padding-left: 0px;
+}
+.calltoaction btn{
   margin-top: 45px;
+}
+.calltoaction{
+  text-align: center;
+  height: 300px;
+  padding: 45px;
 }
 .benefit{
   text-align: center;
@@ -86,3 +95,8 @@ footer btn{
 hr{
   border-top: 1px dashed #8c8b8b;
 }
+
+/*section:nth-child(even){
+  background-color: #eee;
+
+}*/

@@ -3,7 +3,7 @@
 {% block content %}
 {% import "macros/nav-macro.nunjucks" as nav %}
 {{nav.active('pricing')}}
-  <content>
+  <section>
     <div class="jumbotron">
     <h2>Our Offers</h2>
     </div>
@@ -43,7 +43,7 @@
     </div>
     </div>
   </div>
-  </content>
-
+</section>
+{% include "partials/calltoaction.nunjucks" %}
 {% include "partials/footer.nunjucks" %}
 {% endblock %}

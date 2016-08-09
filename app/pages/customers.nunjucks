@@ -3,7 +3,7 @@
 {% block content %}
 {% import "macros/nav-macro.nunjucks" as nav %}
 {{nav.active('customers')}}
-  <content>
+  <section>
   <div class="jumbotron">
   <h2>Customers</h2>
   </div>
@@ -33,7 +33,7 @@
       </div>
     </div>
   </div>
-  </content>
+</section>
 
 {% include "partials/footer.nunjucks" %}
 {% endblock %}
