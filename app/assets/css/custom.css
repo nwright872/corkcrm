@@ -1,9 +1,13 @@
+p{
+  margin: 0px;
+}
 a.active{
   font-weight: bold;
 }
 .jumbotron{
   text-align: center;
   top: 50%;
+  background-color: white;
 }
 .jumbotron h2{
   padding-top: 60px;
@@ -13,12 +17,20 @@ a.active{
 }
 .btn {
   margin: 10px;
+  margin-top: 0px;
   text-align: center;
+  height: 44px;
+}
+.benefits{
+  background-color: #eee;
 }
 .brands {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 30px;
+  background-color: #eee;
+  padding-bottom: 30px;
+
 }
 .brands img{
   width: 50%;
@@ -30,11 +42,10 @@ a.active{
 }
 
 .testimonials{
-  background-color: #eee;
+  background-color: white;
 }
 
 footer{
-  height: 300px;
   padding: 45px;
   font-weight: bolder;
   background-color: #eee;
@@ -48,8 +59,10 @@ footer ul{
 }
 .calltoaction{
   text-align: center;
-  height: 300px;
-  padding: 45px;
+  padding-top: 30px;
+}
+.calltoaction h3{
+  padding-bottom: 15px;
 }
 .benefit{
   text-align: center;
@@ -96,7 +109,45 @@ hr{
   border-top: 1px dashed #8c8b8b;
 }
 
-/*section:nth-child(even){
-  background-color: #eee;
+.form-control{
+  height: 45px;
+  font-size: 20px;
+  font-weight: lighter;
+  line-height: 2;
+  background-color: transparent;
+  padding: 0px;
+  width: 276px;
+  float: left;
+  border-radius: 2px;
 
+}
+.form-group{
+  margin-bottom: 0px;
+}
+/*.btn .btn-primary{
+  border-radius: 2px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 67px;
 }*/
+.corkFooterLogo img{
+  z-index: 1;
+  background-color: darkgray;
+  border-color: #eee;
+  border-width:thick;
+  border-style: solid;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  top: 37px;
+}
+.corkFooterLogo{
+}
+.contactcol{
+}
+.socialMediaIcons > .fa{
+  padding-right: 10px;
+}
+.footerRow{
+  padding-top: 35px;
+}
