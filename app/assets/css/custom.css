@@ -1,0 +1,88 @@
+a.active{
+  font-weight: bold;
+}
+.jumbotron{
+  text-align: center;
+  top: 50%;
+}
+.jumbotron h2{
+  padding-top: 60px;
+}
+.banner{
+  height: 370px;
+}
+.btn {
+  margin: 10px;
+  text-align: center;
+}
+.brands {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.brands img{
+  width: 50%;
+  align-items: center;
+  vertical-align: middle;
+}
+.brands h2{
+  margin-bottom: 30px;
+}
+
+.testimonials{
+  background-color: #eee;
+}
+
+footer{
+  text-align: center;
+  background-color: #eee;
+  height: 300px;
+  padding: 45px;
+}
+footer btn{
+  margin-top: 45px;
+}
+.benefit{
+  text-align: center;
+  padding: 20px;
+}
+.benefit .fa{
+  padding-bottom: 20px;
+}
+.feature{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.feature img{
+  width: 100%;
+}
+.feature:nth-child(odd) {
+    background: #eee;
+}
+.features{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.user{
+  text-align: center;
+}
+.userimg{
+  width: 70%;
+  border-radius: 60px;
+}
+.userlogo{
+  width: 50%;
+}
+.pricetag{
+  margin-left: 20px;
+  margin-bottom: 35px;
+  padding: 20px;
+  background-color: #eee;
+  text-align: center;
+}
+.price{
+  font-weight: bold;
+}
+hr{
+  border-top: 1px dashed #8c8b8b;
+}

@@ -1,0 +1,49 @@
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+{% import "macros/nav-macro.nunjucks" as nav %}
+{{nav.active('pricing')}}
+  <content>
+    <div class="jumbotron">
+    <h2>Our Offers</h2>
+    </div>
+    <div class="container">
+      <div class="row">
+      <div class="col-sm-3">
+        <div class="pricetag">
+        <h3>Bronze</h3>
+        <h2 class="price">$100</h2>
+        <hr>
+        <p>"Fusce dapibus,</p> tellus ac cursus </p><p>commodo, tortor</p><p>mauris condimentum nibh</p><p>ut fer Etiam </p><p>porta Donec </p><p>sed odio dui </p><p>malesuada magna</p>
+      </div>
+    </div>
+      <div class="col-sm-3">
+        <div class="pricetag">
+        <h3>Silver</h3>
+        <h2 class="price">$100</h2>
+        <hr>
+        <p>"Fusce dapibus,</p> tellus ac cursus </p><p>commodo, tortor</p><p>mauris condimentum nibh</p><p>ut fer Etiam </p><p>porta Donec </p><p>sed odio dui </p><p>malesuada magna</p>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="pricetag">
+        <h3>Gold</h3>
+        <h2 class="price">$100</h2>
+        <hr>
+        <p>"Fusce dapibus,</p> tellus ac cursus </p><p>commodo, tortor</p><p>mauris condimentum nibh</p><p>ut fer Etiam </p><p>porta Donec </p><p>sed odio dui </p><p>malesuada magna</p>
+      </div>
+    </div>
+      <div class="col-sm-3">
+        <div class="pricetag">
+        <h3>Enterprise</h3>
+        <h2 class="price">$100</h2>
+        <hr>
+        <p>"Fusce dapibus,</p> tellus ac cursus </p><p>commodo, tortor</p><p>mauris condimentum nibh</p><p>ut fer Etiam </p><p>porta Donec </p><p>sed odio dui </p><p>malesuada magna</p>
+      </div>
+    </div>
+    </div>
+  </div>
+  </content>
+
+{% include "partials/footer.nunjucks" %}
+{% endblock %}

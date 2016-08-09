@@ -1,0 +1,48 @@
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+{% import "macros/nav-macro.nunjucks" as nav %}
+{{nav.active('features')}}
+  <content>
+    <div class="jumbotron">
+      <h2>Features</h2>
+    </div>
+    <div class="container features">
+    <div class="row feature">
+      <div class="col-sm-6">
+        <h2>Feature One</h2>
+        <p>Lorem ipsum dolor sit amet, autem audire cum eu, virtute pertinax adolescens vim no, sit idque accumsan honestatis cu. Qui in magna nemore, no pro tota omnesque petentium. Munere expetenda at vis. Ne eripuit appareat mei, ex quod senserit corrumpit quo. Eu cum modus indoctum abhorreant, quo no commune facilisis assueverit.</p>
+      </div>
+      <div class="col-sm-6">
+        <div class="embed-responsive embed-responsive-16by9">
+          <img src="assets/images/animation.gif" alt="placeholder" />
+        </div>
+      </div>
+    </div>
+    <div class="row feature">
+      <div class="col-xs-12 col-sm-6 col-sm-push-6">
+        <h2>Feature Two</h2>
+        <p>Lorem ipsum dolor sit amet, autem audire cum eu, virtute pertinax adolescens vim no, sit idque accumsan honestatis cu. Qui in magna nemore, no pro tota omnesque petentium. Munere expetenda at vis. Ne eripuit appareat mei, ex quod senserit corrumpit quo. Eu cum modus indoctum abhorreant, quo no commune facilisis assueverit.</p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-sm-pull-6">
+        <div class="embed-responsive embed-responsive-16by9">
+          <img src="assets/images/animation2.gif" alt="placeholder" />
+        </div>
+      </div>
+    </div>
+    <div class="row feature">
+      <div class="col-sm-6">
+        <h2>Feature Three</h2>
+        <p>Lorem ipsum dolor sit amet, autem audire cum eu, virtute pertinax adolescens vim no, sit idque accumsan honestatis cu. Qui in magna nemore, no pro tota omnesque petentium. Munere expetenda at vis. Ne eripuit appareat mei, ex quod senserit corrumpit quo. Eu cum modus indoctum abhorreant, quo no commune facilisis assueverit.</p>
+      </div>
+      <div class="col-sm-6">
+        <div class="embed-responsive embed-responsive-16by9">
+          <img src="assets/images/animation.gif" alt="placeholder" />
+        </div>
+      </div>
+    </div>
+  </div>
+  </content>
+
+{% include "partials/footer.nunjucks" %}
+{% endblock %}
