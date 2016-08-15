@@ -101,5 +101,5 @@
 </div>
 </div>
 </section>
-{% include "partials/footer.nunjucks" %}
+{% include "partials/footerLogo.nunjucks" %}
 {% endblock %}

@@ -44,5 +44,5 @@
   </div>
   </content>
 
-{% include "partials/footer.nunjucks" %}
+{% include "partials/footerLogo.nunjucks" %}
 {% endblock %}

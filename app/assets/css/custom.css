@@ -1,153 +1,222 @@
-p{
+p {
   margin: 0px;
 }
-a.active{
+a.active  {
   font-weight: bold;
 }
-.jumbotron{
+/*LIGHT NAV
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.93);
+}
+.navbar-default .navbar-nav>li>a {
+  color: #000;
+}*/
+
+.navbar {
+  background-color: #1b1b1b;
+}
+.navbar-brand {
+  font-size: larger;
+}
+.navbar-default .navbar-nav>li>a {
+  color: #fff;
+}
+.navbar-default .navbar-nav>li>a:hover {
+  background-color: #216fb2;
+  color: #fff;
+}
+a.navbar-brand:hover {
+  color: #216fb2;
+}
+.navbar-default .navbar-brand {
+  color: #fff;
+}
+.navbar-default {
+  border-style: none;
+  font-size: larger;
+}
+.cork {
+  color: #216fb2;
+  float: left;
+}
+.cork:hover {
+  color: #216fb2;
+}
+.jumbotron {
   text-align: center;
   top: 50%;
-  background-color: white;
+  background-color: #4195ce;
+  color: white;
 }
-.jumbotron h2{
+.jumbotron h2 {
   padding-top: 60px;
 }
-.banner{
+.banner {
   height: 370px;
 }
-.btn {
+/*.btn  {
   margin: 10px;
   margin-top: 0px;
   text-align: center;
   height: 44px;
+  border-radius: 2px;
 }
-.benefits{
+.btn-success {
+  border-color: #666666;
+  background-color: #216fb2;
+  color: #fff;
+}
+.btn-success:hover {
+  background-color: #27568c;
+
+}*/
+.benefits {
   background-color: #eee;
 }
-.brands {
+.brands  {
   text-align: center;
   margin-top: 30px;
-  margin-bottom: 30px;
-  background-color: #eee;
+  background-color: #fff;
   padding-bottom: 30px;
 
 }
-.brands img{
+.brands img {
   width: 50%;
   align-items: center;
   vertical-align: middle;
 }
-.brands h2{
+.brands h2 {
   margin-bottom: 30px;
 }
 
-.testimonials{
+.testimonials {
   background-color: white;
 }
 
-footer{
-  padding: 45px;
-  font-weight: bolder;
-  background-color: #eee;
-}
-footer ul{
-  list-style-type: none;
-  padding-left: 0px;
-}
-.calltoaction btn{
-  margin-top: 45px;
-}
-.calltoaction{
-  text-align: center;
-  padding-top: 30px;
-}
-.calltoaction h3{
-  padding-bottom: 15px;
-}
-.benefit{
+.benefit {
   text-align: center;
   padding: 20px;
 }
-.benefit .fa{
+.benefit .fa {
   padding-bottom: 20px;
 }
-.feature{
+.feature {
   margin-top: 40px;
   margin-bottom: 40px;
 }
-.feature img{
+.feature img {
   width: 100%;
 }
-.feature:nth-child(odd) {
+.feature:nth-child(odd)  {
     background: #eee;
 }
-.features{
+.features {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.user{
+.user {
   text-align: center;
 }
-.userimg{
+.userimg {
   width: 70%;
   border-radius: 60px;
 }
-.userlogo{
+.userlogo {
   width: 50%;
 }
-.pricetag{
+.pricetag {
   margin-left: 20px;
   margin-bottom: 35px;
   padding: 20px;
   background-color: #eee;
   text-align: center;
 }
-.price{
+.price {
   font-weight: bold;
 }
-hr{
+hr {
   border-top: 1px dashed #8c8b8b;
 }
 
-.form-control{
+/*==== CALL TO ACTION ====*/
+
+.calltoaction .btn  {
+  margin-top: 45px;
+}
+.calltoaction {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  background-color: #4195CE;
+  color: #fff;
+}
+.calltoaction h3 {
+  padding-bottom: 15px;
+  margin-bottom: 0px;
+}
+.darkgray {
+  background-color: #4195CE;
+  margin-left: 0px;
+}
+
+.form-control {
   height: 45px;
   font-size: 20px;
   font-weight: lighter;
   line-height: 2;
   background-color: transparent;
-  padding: 0px;
-  width: 276px;
+  color: #fff;
+  width: 66%;;
   float: left;
   border-radius: 2px;
+}
+.form-group {
+  margin-bottom: 0px;
+}
 
+.btn-primary {
+  margin-left: 20px;
+  color: #1b1b1b;
+  background-color: #ffffff;
 }
-.form-group{
-  margin-bottom: 0px;
+
+/*==== FOOTER ====*/
+
+footer {
+  padding: 45px;
+  padding-top: 30px;
+  background-color: #216fb2;
+  color: white;
 }
-/*.btn .btn-primary{
-  border-radius: 2px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  width: 67px;
-}*/
-.corkFooterLogo img{
+footer ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.footer-logo {
+  text-align: center;
+  position: relative;
+  top: -40px;
+}
+
+.footer-logo img {
+  border-radius: 7px;
   z-index: 1;
   background-color: darkgray;
-  border-color: #eee;
-  border-width:thick;
-  border-style: solid;
-  text-align: center;
-  width: 100%;
+  width: 300px;
+}
+.footer-logo img {
   position: relative;
-  top: 37px;
+  text-align: center;
 }
-.corkFooterLogo{
+.footer-logo.split img {
+  width: 300px;
+  border-radius: 4px;
 }
-.contactcol{
-}
-.socialMediaIcons > .fa{
+.socialMediaIcons > .fa  {
   padding-right: 10px;
 }
-.footerRow{
+.footerRow {
   padding-top: 35px;
 }

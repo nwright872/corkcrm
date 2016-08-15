@@ -14,7 +14,7 @@
         </div>	<!--navbar-header-->
         <div class="navbar-collapse collapse">
           <div class="navbar-header">
-            <a class="navbar-brand nav {%if activePage == 'home' %} active {% endif %}" href="index.html">Cork CRM</a>
+            <a class="navbar-brand nav {%if activePage == 'home' %} active {% endif %}" href="index.html"><div class="cork">CORK</div>CRM</a>
           </div>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="features.html" class="{%if activePage == 'features' %} active {% endif %}">Features</a></li>

@@ -12,3 +12,8 @@ gulp.task('nunjucks', function() {
   // output files in app folder
   .pipe(gulp.dest('app'))
 });
+
+gulp.task('default',function() {
+    gulp.watch('./app/templates/**/*.+(html|nunjucks)',['nunjucks']);
+    gulp.watch('./app/pages/**/*.+(html|nunjucks)',['nunjucks']);
+});
