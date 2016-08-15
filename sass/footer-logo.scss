@@ -1,0 +1,71 @@
+/*==== CALL TO ACTION ====*/
+
+.calltoaction {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 75px;
+  background-color: #4195CE;
+  color: #fff;
+  h3 {
+    padding-bottom: 15px;
+    margin-bottom: 0px;
+  }
+  .btn  {
+    margin-top: 15px;
+  }
+}
+
+.form-control {
+  float: left;
+  border-radius: 2px;
+}
+.form-group {
+  margin-bottom: 0px;
+}
+.input-group {
+  max-width: 260px;
+  .btn {
+    border-color: rgb(204,204,204);
+  }
+}
+
+/*==== FOOTER ====*/
+
+footer {
+  padding: 45px;
+  padding-top: 15px;
+  background-color: #216fb2;
+  color: white;
+  ul {
+    list-style-type: none;
+    padding-left: 0px;
+  }
+  a {
+    color: #4195CE;
+    font-weight: 500;
+  }
+  .copyright {
+    color: #bcd;
+  }
+}
+
+.footer-logo {
+  text-align: center;
+  position: relative;
+  top: -39px;
+  img {
+    border-radius: 7px;
+    z-index: 1;
+    background-color: darkgray;
+    width: 300px;
+  }
+}
+
+.socialMediaIcons {
+  display: block;
+  margin: 10px 0;
+  .fa  {
+    margin-right: 5px;
+    font-size: 1.5em;
+  }
+}

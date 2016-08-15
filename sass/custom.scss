@@ -1,18 +1,14 @@
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
+}
+
 p {
   margin: 0px;
 }
 a.active  {
   font-weight: bold;
 }
-/*LIGHT NAV
-
-.navbar {
-  background-color: rgba(0, 0, 0, 0.93);
-}
-.navbar-default .navbar-nav>li>a {
-  color: #000;
-}*/
-
 .navbar {
   background-color: #1b1b1b;
 }
@@ -55,22 +51,7 @@ a.navbar-brand:hover {
 .banner {
   height: 370px;
 }
-/*.btn  {
-  margin: 10px;
-  margin-top: 0px;
-  text-align: center;
-  height: 44px;
-  border-radius: 2px;
-}
-.btn-success {
-  border-color: #666666;
-  background-color: #216fb2;
-  color: #fff;
-}
-.btn-success:hover {
-  background-color: #27568c;
 
-}*/
 .benefits {
   background-color: #eee;
 }
@@ -137,86 +118,4 @@ a.navbar-brand:hover {
 }
 hr {
   border-top: 1px dashed #8c8b8b;
-}
-
-/*==== CALL TO ACTION ====*/
-
-.calltoaction .btn  {
-  margin-top: 45px;
-}
-.calltoaction {
-  text-align: center;
-  padding-top: 30px;
-  padding-bottom: 50px;
-  background-color: #4195CE;
-  color: #fff;
-}
-.calltoaction h3 {
-  padding-bottom: 15px;
-  margin-bottom: 0px;
-}
-.darkgray {
-  background-color: #4195CE;
-  margin-left: 0px;
-}
-
-.form-control {
-  height: 45px;
-  font-size: 20px;
-  font-weight: lighter;
-  line-height: 2;
-  background-color: transparent;
-  color: #fff;
-  width: 66%;;
-  float: left;
-  border-radius: 2px;
-}
-.form-group {
-  margin-bottom: 0px;
-}
-
-.btn-primary {
-  margin-left: 20px;
-  color: #1b1b1b;
-  background-color: #ffffff;
-}
-
-/*==== FOOTER ====*/
-
-footer {
-  padding: 45px;
-  padding-top: 30px;
-  background-color: #216fb2;
-  color: white;
-}
-footer ul {
-  list-style-type: none;
-  padding-left: 0px;
-}
-
-.footer-logo {
-  text-align: center;
-  position: relative;
-  top: -40px;
-}
-
-.footer-logo img {
-  border-radius: 7px;
-  z-index: 1;
-  background-color: darkgray;
-  width: 300px;
-}
-.footer-logo img {
-  position: relative;
-  text-align: center;
-}
-.footer-logo.split img {
-  width: 300px;
-  border-radius: 4px;
-}
-.socialMediaIcons > .fa  {
-  padding-right: 10px;
-}
-.footerRow {
-  padding-top: 35px;
 }
