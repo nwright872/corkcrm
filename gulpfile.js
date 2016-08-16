@@ -2,7 +2,7 @@ var gulp = require('gulp');
 var nunjucksRender = require('gulp-nunjucks-render');
 var webserver = require('gulp-webserver');
 var sass = require('gulp-sass');
- 
+
 gulp.task('webserver', function() {
   gulp.src('app')
     .pipe(webserver({

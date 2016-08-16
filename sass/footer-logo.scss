@@ -2,7 +2,7 @@
 
 .calltoaction {
   text-align: center;
-  padding-top: 30px;
+  padding-top:  12px;
   padding-bottom: 75px;
   background-color: #4195CE;
   color: #fff;
@@ -16,8 +16,11 @@
 }
 
 .form-control {
-  float: left;
+  background-color: #216fb2;
   border-radius: 2px;
+  max-width: 250px;
+  display: block;
+  border: 1px solid #ccc;
 }
 .form-group {
   margin-bottom: 0px;
@@ -25,8 +28,25 @@
 .input-group {
   max-width: 260px;
   .btn {
+    margin-top: 15px;
     border-color: rgb(204,204,204);
   }
+}
+button.btn.btn-primary {
+    margin-top: 8px;
+    background-color: #4195ce;
+}
+textarea {
+  background-color: #216fb2;
+  max-width: 500px;
+  width: 100%;
+  height: 66px;
+  margin-top: 8px;
+  display: block;
+  color: #000;
+  padding-left: 12px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
 }
 
 /*==== FOOTER ====*/
@@ -39,6 +59,7 @@ footer {
   ul {
     list-style-type: none;
     padding-left: 0px;
+    margin-top:  12px;
   }
   a {
     color: #4195CE;
@@ -46,9 +67,24 @@ footer {
   }
   .copyright {
     color: #bcd;
+    margin-top: 30px;
   }
 }
 
+.footer-links{
+  border-top: dashed 1px rgba(255,255,255,0.3);
+  }
+.footer-links li{
+  display: inline-block;
+  padding-right: 6px;
+  border-right: solid thin #fff;
+}
+.footer-links li:last-child {
+  border-right: none;
+}
+.footer-links a{
+    color: #fff;
+}
 .footer-logo {
   text-align: center;
   position: relative;
@@ -57,15 +93,32 @@ footer {
     border-radius: 7px;
     z-index: 1;
     background-color: darkgray;
-    width: 300px;
+    max-width: 300px;
+    width: 100%;
   }
 }
 
 .socialMediaIcons {
   display: block;
   margin: 10px 0;
+  span {
+    margin-right: 10px;
+  }
   .fa  {
+    top: 1px;
     margin-right: 5px;
     font-size: 1.5em;
+    border-radius: 16px;
+    width: 30px;
+    height: 30px;
+    background-color: #4195ce;
+    text-align: center;
+    line-height: 30px;
+  }
+  a{
+    color: #fff;
+  }
+  .fa:hover{
+    background-color: #48a6e6;
   }
 }

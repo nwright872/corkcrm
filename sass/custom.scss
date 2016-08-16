@@ -10,21 +10,25 @@ a.active  {
   font-weight: bold;
 }
 .navbar {
-  background-color: #1b1b1b;
+  background-color: #fff;
 }
-.navbar-brand {
-  font-size: larger;
+.navbar-brand > img{
+  width: 169px;
+}
+.navbar-brand{
+  padding: 10px 15px 15px 15px
+}
+.navbar-brand.nav:hover{
+  background-color: #4195CE;
 }
 .navbar-default .navbar-nav>li>a {
-  color: #fff;
+  color: #252525;
 }
 .navbar-default .navbar-nav>li>a:hover {
-  background-color: #216fb2;
+  background-color: #4195CE;
   color: #fff;
 }
-a.navbar-brand:hover {
-  color: #216fb2;
-}
+
 .navbar-default .navbar-brand {
   color: #fff;
 }
