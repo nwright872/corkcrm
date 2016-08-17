@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var nunjucksRender = require('gulp-nunjucks-render');
 var webserver = require('gulp-webserver');
 var sass = require('gulp-sass');
+var autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('webserver', function() {
   gulp.src('app')
@@ -16,6 +17,10 @@ gulp.task('webserver', function() {
 gulp.task('styles', function() {
   gulp.src('sass/style.scss')
         .pipe(sass().on('error', sass.logError))
+        .pipe(autoprefixer({
+          browsers: ['last 3 versions'],
+          cascade: false
+        }))
         .pipe(gulp.dest('./app/assets/css'))
 });
 
