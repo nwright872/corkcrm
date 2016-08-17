@@ -16,11 +16,13 @@
 }
 
 .form-control {
-  background-color: #216fb2;
+  background-color: rgba(0,0,0,0.1);
   border-radius: 2px;
   max-width: 250px;
   display: block;
-  border: 1px solid #ccc;
+  border: none;
+  color: #fff;
+  box-shadow: none;
 }
 .form-group {
   margin-bottom: 0px;
@@ -33,19 +35,24 @@
   }
 }
 button.btn.btn-primary {
-    margin-top: 8px;
+    margin-top: 15px;
     background-color: #4195ce;
 }
+button.btn.btn-primary:hover {
+  border-color: rgba(0,0,0,0);
+  background-color: rgba(0,0,0,0.1);
+}
+
 textarea {
-  background-color: #216fb2;
-  max-width: 500px;
+  background-color: rgba(0,0,0,0.1);
+  max-width: 320px;
   width: 100%;
   height: 66px;
   margin-top: 8px;
   display: block;
-  color: #000;
+  color: #fff;
   padding-left: 12px;
-  border: 1px solid #ccc;
+  border: none;
   border-radius: 2px;
 }
 
@@ -56,6 +63,9 @@ footer {
   padding-top: 15px;
   background-color: #216fb2;
   color: white;
+  h3{
+    margin-bottom: 20px;
+  }
   ul {
     list-style-type: none;
     padding-left: 0px;
@@ -72,15 +82,21 @@ footer {
 }
 
 .footer-links{
-  border-top: dashed 1px rgba(255,255,255,0.3);
+  border-top: solid 1px rgba(255,255,255,0.2);
   }
 .footer-links li{
   display: inline-block;
-  padding-right: 6px;
+  padding: 0 8px;
   border-right: solid thin #fff;
+  &:last-child {
+    border-right: none;
+  }
+  &:first-child {
+    padding-left: 0;
+  }
 }
 .footer-links li:last-child {
-  border-right: none;
+
 }
 .footer-links a{
     color: #fff;
@@ -90,7 +106,7 @@ footer {
   position: relative;
   top: -39px;
   img {
-    border-radius: 7px;
+    border-radius: 3px;
     z-index: 1;
     background-color: darkgray;
     max-width: 300px;
@@ -100,18 +116,19 @@ footer {
 
 .socialMediaIcons {
   display: block;
-  margin: 10px 0;
+  margin: 0 0;
   span {
     margin-right: 10px;
   }
   .fa  {
     top: 1px;
     margin-right: 5px;
-    font-size: 1.5em;
-    border-radius: 16px;
+    font-size: 1em;
+    border-radius: 3px;
     width: 30px;
     height: 30px;
-    background-color: #4195ce;
+    margin-bottom: 10px;
+    background-color: rgba(0,0,0,0.1);
     text-align: center;
     line-height: 30px;
   }
@@ -120,5 +137,13 @@ footer {
   }
   .fa:hover{
     background-color: #48a6e6;
+  }
+}
+
+.footer-contact{
+  border-left: 1px solid rgba(255,255,255,0.2);
+  padding: 3px 0 3px 20px;
+  ul{
+    margin-bottom: 0px;
   }
 }

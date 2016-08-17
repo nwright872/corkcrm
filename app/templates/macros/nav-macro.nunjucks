@@ -14,13 +14,14 @@
         </div>	<!--navbar-header-->
         <div class="navbar-collapse collapse">
           <div class="navbar-header">
-            <a class="navbar-brand nav {%if activePage == 'home' %} active {% endif %}" href="index.html"><img src="assets/images/CorkCRM-logo.jpg" alt="logo"/></a>
+            <a class="navbar-brand nav {%if activePage == 'home' %} active {% endif %}" href="index.html"><img src="assets/images/CorkCRM-logo-transparent.png" alt="logo"/></a>
           </div>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="features.html" class="{%if activePage == 'features' %} active {% endif %}">Features</a></li>
             <li><a href="customers.html" class="{%if activePage == 'customers' %} active {% endif %}">Customers</a></li>
             <li><a href="pricing.html" class="{%if activePage == 'pricing' %} active {% endif %}">Pricing</a></li>
             <li><a href="blog.html" class="{%if activePage == 'blog' %} active {% endif %}">Blog</a></li>
+            <li><a href="signup.html" class="sign-up {%if activePage == 'blog' %} active {% endif %}">Sign Up</a></li>
           </ul>
         </div> <!--navbar-collapse-->
       </div>	<!--container-->

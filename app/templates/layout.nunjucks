@@ -8,6 +8,7 @@
   <title>Cork CRM</title>
   <link href="/assets/css/style.css" rel="stylesheet">
   <script src="https://use.fontawesome.com/db080cfaad.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato|Oswald" rel="stylesheet">
 </head>
 <body>
   {% block content %} {% endblock %}
