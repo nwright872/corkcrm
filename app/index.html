@@ -8,7 +8,7 @@
   <title>Cork CRM</title>
   <link href="/assets/css/style.css" rel="stylesheet">
   <script src="https://use.fontawesome.com/db080cfaad.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Lato|Oswald" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
 </head>
 <body>
   
@@ -17,7 +17,7 @@
 <!--NAVBAR-->
 <div class="nav">
   <div class="navbar-wrapper">
-    <div class="navbar navbar-fixed-top navbar-default" role="navigation">
+    <div class="navbar navbar-default" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -26,11 +26,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-        </div>	<!--navbar-header-->
-        <div class="navbar-collapse collapse">
           <div class="navbar-header">
             <a class="navbar-brand nav  active " href="index.html"><img src="assets/images/CorkCRM-logo-transparent.png" alt="logo"/></a>
           </div>
+        </div>	<!--navbar-header-->
+        <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="features.html" class="">Features</a></li>
             <li><a href="customers.html" class="">Customers</a></li>
@@ -45,40 +45,127 @@
 </div>
 
 
+<!-- Hero Strip -->
 
-<div class="jumbotron banner">
-  <div class="container">
-    <h2>A Better Way to Run Your Painting Business</h2>
-    <h3>All-in-one software to manage leads, appointments, proposals, and jobs.</h3>
-    <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
+<div class="hero-modal">
+  <div class="jumbotron banner">
+    <div class="overlay">
+      <h1>A Better Way to Run Your Painting Business</h1>
+      <h3>All-in-one software to manage leads, appointments, proposals, and jobs.</h3>
+      <div class="call-to-action">
+        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Your email">
+        <button type="button" class="btn btn-lg btn-success" data-toggle="modal" data-target="#myModal">
+          Start now
+        </button>
+
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="myModalLabel">Create Account</h4>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="form-box">
+                <form role="form" id="contact-form">
+                  <!-- name field -->
+                      <div class="form-group">
+                      <div id="nameError" class="sr-only" role="alert"></div>
+                      <label for="form-name-field" class="sr-only">First Name</label>
+                          <div class="input-group">
+                              <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                              <input type="text" class="form-control" id="form-name-field" value="" placeholder="Fist name">
+                          </div>
+                      </div>
+                      <div class="form-group">
+                      <div id="nameError" class="sr-only" role="alert"></div>
+                      <label for="form-name-field" class="sr-only">Last Name</label>
+                          <div class="input-group">
+                              <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                              <input type="text" class="form-control" id="form-name-field" value="" placeholder="Last name">
+                          </div>
+                      </div>
+                  <!-- email field -->
+                      <div class="form-group">
+                      <div id="emailError" class="sr-only" role="alert"></div>
+                      <label for="form-email-field" class="sr-only">Email</label>
+                          <div class="input-group">
+                              <div class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></div>
+                              <input type="email" class="form-control" id="form-email-field" value="" placeholder="Email">
+                          </div>
+                      </div>
+                  <!-- phone field -->
+                      <div class="form-group">
+                      <div id="phoneError" class="sr-only"" role="alert"></div>
+                      <label for="form-phone-field" class="sr-only">Phone</label>
+                          <div class="input-group">
+                              <div class="input-group-addon"><span class="glyphicon glyphicon-phone"></span></div>
+                              <input type="tel" class="form-control" id="form-phone-field" value="" placeholder="Phone">
+                          </div>
+                      </div>
+                  <div class="checkbox">
+                      <label>
+                          <input type="checkbox" id="checkbox-form"> I agree to terms and condition.
+                      </label>
+                    <div id="term-field" class="well">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
+
+
 <!-- Benefits -->
 <div class="benefits">
   <div class="container">
     <div class="row">
-      <div class="col-sm-3 benefit">
-        <h2>Heading</h2>
-        <i class="fa fa-paper-plane-o fa-5x" aria-hidden="true"></i>
-        <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fer. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+      <div class="col-sm-3 col-xs-6 benefit">
+        <div class="icon-wrapper">
+        <i class="fa fa-users fa-4x cool-icon" aria-hidden="true"></i>
+      </div>
+        <h3>Track Leads</h3>
+        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, massa justo sit amet risus.</p>
         <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
       </div>
-      <div class="col-sm-3 benefit">
-        <h2>Heading</h2>
-        <i class="fa fa-paperclip fa-5x" aria-hidden="true"></i>
-        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-      </div>
-      <div class="col-sm-3 benefit">
-        <h2>Heading</h2>
-        <i class="fa fa-rebel fa-5x" aria-hidden="true"></i>
+      <div class="col-sm-3 col-xs-6 benefit">
+        <div class="icon-wrapper">
+        <i class="fa fa-calendar fa-4x cool-icon" aria-hidden="true"></i>
+        </div>
+        <h3>Book Appointments</h3>
         <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. </p>
+        <p><a class="btn btn-secondary cool-icon" href="#" role="button">View details &raquo;</a></p>
+      </div>
+      <div class="col-sm-3 col-xs-6 benefit">
+        <div class="icon-wrapper">
+        <i class="fa fa-file-text-o fa-4x cool-icon" aria-hidden="true"></i>
+      </div>
+        <h3>Create Proposals</h3>
+        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta justo sit amet risus.</p>
         <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
       </div>
-      <div class="col-sm-3 benefit">
-        <h2>Heading</h2>
-        <i class="fa fa-file-text-o fa-5x" aria-hidden="true"></i>
-        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper, ut fermentum massa justo sit amet risus.</p>
+      <div class="col-sm-3 col-xs-6 benefit">
+        <div class="icon-wrapper">
+        <i class="fa fa-pencil fa-4x cool-icon" aria-hidden="true"></i>
+        </div>
+        <h3>Sign Contracts</h3>
+        <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fer. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
         <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
       </div>
     </div>
@@ -88,17 +175,21 @@
 <section class="testimonials">
   <div class="container">
     <div class="row">
-      <div class="col-lg-4 col-md-3">
-        <h2>Full Width Video</h2>
-        <h3>Enjoy Adding Full Screen Videos to your Page Sections</h3>
-        <p><a class="btn btn-md btn-success" href="#" role="button">Play Video</a></p>
-      </div>
-      <div class="col-lg-8 col-md-9">
+      <!-- video card -->
+      
+      <!-- simple video -->
+      <div class="col-xs-12 col-sm-6 video">
         <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ewEZ-FN63TU"></iframe>
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Wc9rj4-A6FI"></iframe>
         </div>
       </div>
+      <div class="col-xs-12 col-sm-6">
+      <div class="embed-responsive embed-responsive-16by9">
+        <h3>Hear what one user has to say about CorkCRM</h3>
+        <p>"Donec sed odio dui. Cras justo odio, dapibus ac quam. Vestibulum id ligula porta felis euismod semper."</p>
+      </div>
     </div>
+  </div>
   </div>
 </section>
 <!-- Brand Strip -->
@@ -106,36 +197,11 @@
   <div class="brands">
     <div class="container">
       <div class="row">
-        <div class="col-md-12">
-          <h2>Our Friends</h2>
-        </div>
+        
       </div>
       <div class="row">
-        <div class="col-sm-3 col-xs-6 vcenter">
-          <img src="assets/images/greenpeakLogo2.png" alt="logo" />
-        </div>
-        <div class="col-sm-3 col-xs-6 vcenter">
-          <img src="assets/images/amiga.png" alt="logo" />
-        </div>
-        <div class="col-sm-3 col-xs-6 vcenter">
-          <img src="assets/images/greenpeakLogo2.png" alt="logo" />
-        </div>
-        <div class="col-sm-3 col-xs-6 vcenter">
-          <img src="assets/images/logo_placeholder.png" alt="logo" />
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-3 col-xs-6 vcenter">
-          <img src="assets/images/kayak.jpg" alt="logo" />
-        </div>
-        <div class="col-sm-3 col-xs-6 vcenter">
-          <img src="assets/images/phlogo.png" alt="logo" />
-        </div>
-        <div class="col-sm-3 col-xs-6 vcenter">
-          <img src="assets/images/logo_placeholder.png" alt="logo" />
-        </div>
-        <div class="col-sm-3 col-xs-6 vcenter">
-          <img src="assets/images/spacecraft-logo-placeholder.png" alt="logo" />
+        <div class="col-sm-12 col-xs-12 vcenter">
+          <img src="assets/images/brand-logos-wide.png" alt="logo" />
         </div>
       </div>
     </div>

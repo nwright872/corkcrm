@@ -1,0 +1,57 @@
+.hero-inline{
+  .jumbotron{
+    padding: 0px;
+    height: 100vh;
+
+  }
+  .banner {
+    background-image: url("/assets/images/painted-room.jpg");
+    background-repeat:repeat-x;
+    background-position: bottom;
+    background-attachment: fixed;
+    overflow: hidden;
+    z-index: -1;
+    width: 100%;
+
+  }
+  .overlay{
+    background-color: rgba(18, 129, 162, 0.86);
+    background: linear-gradient(to bottom right, rgba(169, 251, 255, 0.92), rgba(33, 110, 178, 0.96));
+    z-index: 2;
+    padding: 30px;
+    height: 100vh;
+      h2{
+        padding-top: 120px;
+      }
+      .btn-success{
+        background-color: #3acc1d;
+        border-color: #55b942;
+        height: 34px;
+        padding-top: 5px;
+      }
+      .btn-success:hover{
+        background-color: #36ad1e;
+        border-color: transparent;
+      }
+  }
+  .call-to-action{
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    max-width: 600px;
+    width: 100%;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    border-radius: 3px;
+    text-align: center;
+    background-color: rgba(215, 240, 255, 0.23);
+
+    .form-control {
+      color: #666;
+      background-color: rgb(255, 255, 255);
+      max-width: 200px;
+      display: inline-block;
+      margin: 5px;
+    }
+  }
+}

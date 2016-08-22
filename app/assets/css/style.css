@@ -5071,14 +5071,23 @@ button.close {
 body {
   font-family: 'Lato', sans-serif; }
 
+body.modal-open {
+  overflow: inherit;
+  padding-right: 0 !important; }
+
+h1, h2, h3 {
+  font-family: 'Open Sans', sans-serif; }
+
+h1 {
+  font-weight: bold;
+  font-size: 30px; }
+
 p {
   margin: 0px; }
 
-a.active {
-  font-weight: bold; }
-
 .navbar {
-  background-color: #FAFAFA; }
+  position: absolute;
+  background-color: transparent; }
 
 .navbar-brand > img {
   width: 169px; }
@@ -5087,11 +5096,17 @@ a.active {
   padding: 10px 15px 15px 15px; }
 
 .navbar-default .navbar-nav > li > a {
+  border-top: solid transparent 4px;
   color: #666666;
   font-family: 'Lato', sans-serif;
   font-size: 17px; }
+  .navbar-default .navbar-nav > li > a.active {
+    border-top: solid #fff 4px; }
   .navbar-default .navbar-nav > li > a.sign-up {
-    background-color: #dddddd; }
+    border-top: solid transparent 4px;
+    color: #fff; }
+    .navbar-default .navbar-nav > li > a.sign-up.active {
+      border-top: solid transparent 0px; }
 
 .navbar-default .navbar-nav > li > a:hover {
   color: #1281a2; }
@@ -5100,23 +5115,99 @@ a.active {
   color: #191919; }
 
 .navbar-default {
+  width: 100%;
   border-style: none;
   font-size: larger; }
+
+.input-group .form-control {
+  color: #555; }
 
 .jumbotron {
   text-align: center;
   top: 50%;
-  background-color: #1281a2;
-  color: white; }
+  color: white;
+  margin-bottom: 0px;
+  padding: 0px; }
 
-.jumbotron h2 {
-  padding-top: 60px; }
-
-.banner {
-  height: 370px; }
+.jumbotron h2, h1 {
+  padding-top: 61px;
+  font-size: 30px !important; }
 
 .benefits {
-  background-color: #eee; }
+  background-color: #fff;
+  padding-top: 50px; }
+
+.benefit {
+  text-align: center;
+  padding: 20px; }
+
+.benefits {
+  border-radius: 4px;
+  background-color: white;
+  padding: 20px;
+  position: relative; }
+
+i.cool-icon {
+  border-color: transparent;
+  font-size: 3rem;
+  color: white;
+  position: relative;
+  border-radius: 50%;
+  padding: 23px;
+  margin: 3px;
+  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease; }
+
+i.cool-icon:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: solid 2px;
+  transform: scale(1);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 50%; }
+
+i.cool-icon:nth-of-type(1) {
+  background-color: #458fc2;
+  border-color: #458fc2; }
+
+i.cool-icon:hover {
+  cursor: pointer;
+  box-shadow: none; }
+
+.icon-wrapper {
+  border-radius: 110%;
+  width: 105px;
+  /* -webkit-perspective: 150px; */
+  perspective: 301px;
+  margin: auto; }
+  .icon-wrapper:hover i.fa {
+    transform: rotateY(180deg);
+    transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, transform 0.3s ease;
+    border-color: #458fc2;
+    color: #458fc2;
+    background-color: transparent;
+    top: 0px;
+    left: 0px;
+    position: relative;
+    cursor: pointer; }
+
+.testimonials {
+  box-shadow: inset 0px -2px 71px 3px rgba(47, 47, 47, 0.69);
+  color: #fff;
+  background-color: #458fc2;
+  padding-top: 40px;
+  padding-bottom: 40px; }
+  .testimonials h3 {
+    text-align: left;
+    padding-bottom: 20px; }
+  .testimonials p {
+    text-align: left; }
+  .testimonials .video-card {
+    background-color: #fff;
+    color: #1b1b1b;
+    text-align: left; }
 
 .brands {
   text-align: center;
@@ -5125,22 +5216,13 @@ a.active {
   padding-bottom: 30px; }
 
 .brands img {
-  width: 50%;
+  width: 100%;
+  max-width: 850px;
   align-items: center;
   vertical-align: middle; }
 
 .brands h2 {
   margin-bottom: 30px; }
-
-.testimonials {
-  background-color: white; }
-
-.benefit {
-  text-align: center;
-  padding: 20px; }
-
-.benefit .fa {
-  padding-bottom: 20px; }
 
 .feature {
   margin-top: 40px;
@@ -5178,6 +5260,185 @@ a.active {
 
 hr {
   border-top: 1px dashed #8c8b8b; }
+
+@media (min-width: 601px) {
+  i.cool-icon {
+    padding: 30px;
+    margin: 10px;
+    font-size: 3rem; } }
+
+@media (min-width: 993px) {
+  i.cool-icon {
+    padding: 30px;
+    margin: 10px;
+    font-size: 4rem; }
+  i.cool-icon:after {
+    border-width: 3px;
+    top: 0px;
+    left: 0px; } }
+
+.hero-inline .jumbotron {
+  padding: 0px;
+  height: 100vh; }
+
+.hero-inline .banner {
+  background-image: url("/assets/images/painted-room.jpg");
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-attachment: fixed;
+  overflow: hidden;
+  z-index: -1;
+  width: 100%; }
+
+.hero-inline .overlay {
+  background-color: rgba(18, 129, 162, 0.86);
+  background: linear-gradient(to bottom right, rgba(169, 251, 255, 0.92), rgba(33, 110, 178, 0.96));
+  z-index: 2;
+  padding: 30px;
+  height: 100vh; }
+  .hero-inline .overlay h2 {
+    padding-top: 120px; }
+  .hero-inline .overlay .btn-success {
+    background-color: #3acc1d;
+    border-color: #55b942;
+    height: 34px;
+    padding-top: 5px; }
+  .hero-inline .overlay .btn-success:hover {
+    background-color: #36ad1e;
+    border-color: transparent; }
+
+.hero-inline .call-to-action {
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  max-width: 600px;
+  width: 100%;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  border-radius: 3px;
+  text-align: center;
+  background-color: rgba(215, 240, 255, 0.23); }
+  .hero-inline .call-to-action .form-control {
+    color: #666;
+    background-color: white;
+    max-width: 200px;
+    display: inline-block;
+    margin: 5px; }
+
+.hero-redirect .jumbotron {
+  padding: 0px; }
+
+.hero-redirect .banner {
+  background-image: url("/assets/images/painted-room.jpg");
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-attachment: fixed;
+  overflow: hidden;
+  z-index: -1;
+  width: 100%; }
+
+.hero-redirect .overlay {
+  background-color: rgba(18, 129, 162, 0.86);
+  background: linear-gradient(to bottom right, rgba(169, 251, 255, 0.92), rgba(33, 110, 178, 0.96));
+  z-index: 2;
+  padding: 30px; }
+  .hero-redirect .overlay h2 {
+    padding-top: 120px; }
+  .hero-redirect .overlay .btn-success {
+    background-color: #3acc1d;
+    border-color: #55b942;
+    height: 34px;
+    padding-top: 5px; }
+  .hero-redirect .overlay .btn-success:hover {
+    background-color: #36ad1e;
+    border-color: transparent; }
+
+.hero-redirect .call-to-action {
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  max-width: 600px;
+  width: 100%;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  border-radius: 3px;
+  text-align: center; }
+  .hero-redirect .call-to-action .form-control {
+    color: #666;
+    background-color: white;
+    max-width: 200px;
+    display: inline-block;
+    margin: 5px; }
+
+.hero-modal .jumbotron {
+  padding: 0px; }
+
+.hero-modal .banner {
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-attachment: fixed;
+  overflow: hidden;
+  z-index: -1;
+  width: 100%; }
+
+.hero-modal .overlay {
+  background-color: rgba(18, 129, 162, 0.86);
+  background: linear-gradient(to bottom right, rgba(169, 251, 255, 0.92), rgba(33, 110, 178, 0.96));
+  z-index: 2;
+  padding: 42px; }
+  .hero-modal .overlay h2 {
+    padding-top: 86px; }
+  .hero-modal .overlay .btn-success {
+    background-color: #3acc1d;
+    border-color: #55b942;
+    height: 34px;
+    padding-top: 5px; }
+  .hero-modal .overlay .btn-success:hover {
+    background-color: #36ad1e;
+    border-color: transparent; }
+
+.hero-modal .call-to-action {
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  max-width: 600px;
+  width: 100%;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  border-radius: 3px;
+  text-align: center; }
+  .hero-modal .call-to-action .form-control {
+    color: #666666;
+    background-color: white;
+    max-width: 200px;
+    display: inline-block;
+    margin: 5px; }
+
+.hero-modal .form-box {
+  margin: auto;
+  padding-top: 20px; }
+
+.hero-modal .form-box h1 {
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgba(169, 251, 255, 0.92); }
+
+.hero-modal .form-box h1 span {
+  font-weight: lighter; }
+
+.hero-modal .input-group {
+  margin: auto;
+  max-width: 260px;
+  margin-bottom: 12px;
+  color: #555; }
+
+.hero-modal .modal-footer {
+  border-top: none; }
+
+.hero-modal .modal-header {
+  background-color: #ffc800;
+  border-bottom: none; }
 
 /*==== CALL TO ACTION ====*/
 .calltoaction {

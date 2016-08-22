@@ -4,40 +4,42 @@
 {% block content %}
 {% import "macros/nav-macro.nunjucks" as nav %}
 {{nav.active('home')}}
+{% include "partials/hero-modal.nunjucks" %}
 
-<div class="jumbotron banner">
-  <div class="container">
-    <h2>A Better Way to Run Your Painting Business</h2>
-    <h3>All-in-one software to manage leads, appointments, proposals, and jobs.</h3>
-    <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
-  </div>
-</div>
 <!-- Benefits -->
 <div class="benefits">
   <div class="container">
     <div class="row">
-      <div class="col-sm-3 benefit">
-        <h2>Heading</h2>
-        <i class="fa fa-paper-plane-o fa-5x" aria-hidden="true"></i>
-        <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fer. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+      <div class="col-sm-3 col-xs-6 benefit">
+        <div class="icon-wrapper">
+        <i class="fa fa-users fa-4x cool-icon" aria-hidden="true"></i>
+      </div>
+        <h3>Track Leads</h3>
+        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, massa justo sit amet risus.</p>
         <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
       </div>
-      <div class="col-sm-3 benefit">
-        <h2>Heading</h2>
-        <i class="fa fa-paperclip fa-5x" aria-hidden="true"></i>
-        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-      </div>
-      <div class="col-sm-3 benefit">
-        <h2>Heading</h2>
-        <i class="fa fa-rebel fa-5x" aria-hidden="true"></i>
+      <div class="col-sm-3 col-xs-6 benefit">
+        <div class="icon-wrapper">
+        <i class="fa fa-calendar fa-4x cool-icon" aria-hidden="true"></i>
+        </div>
+        <h3>Book Appointments</h3>
         <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. </p>
+        <p><a class="btn btn-secondary cool-icon" href="#" role="button">View details &raquo;</a></p>
+      </div>
+      <div class="col-sm-3 col-xs-6 benefit">
+        <div class="icon-wrapper">
+        <i class="fa fa-file-text-o fa-4x cool-icon" aria-hidden="true"></i>
+      </div>
+        <h3>Create Proposals</h3>
+        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta justo sit amet risus.</p>
         <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
       </div>
-      <div class="col-sm-3 benefit">
-        <h2>Heading</h2>
-        <i class="fa fa-file-text-o fa-5x" aria-hidden="true"></i>
-        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper, ut fermentum massa justo sit amet risus.</p>
+      <div class="col-sm-3 col-xs-6 benefit">
+        <div class="icon-wrapper">
+        <i class="fa fa-pencil fa-4x cool-icon" aria-hidden="true"></i>
+        </div>
+        <h3>Sign Contracts</h3>
+        <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fer. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
         <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
       </div>
     </div>
@@ -47,17 +49,22 @@
 <section class="testimonials">
   <div class="container">
     <div class="row">
-      <div class="col-lg-4 col-md-3">
-        <h2>Full Width Video</h2>
-        <h3>Enjoy Adding Full Screen Videos to your Page Sections</h3>
-        <p><a class="btn btn-md btn-success" href="#" role="button">Play Video</a></p>
-      </div>
-      <div class="col-lg-8 col-md-9">
+      <!-- video card -->
+      {# <div class="col-xs-12 col-md-6 col-md-offset-3 video">
+      </div> #}
+      <!-- simple video -->
+      <div class="col-xs-12 col-sm-6 video">
         <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ewEZ-FN63TU"></iframe>
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Wc9rj4-A6FI"></iframe>
         </div>
       </div>
+      <div class="col-xs-12 col-sm-6">
+      <div class="embed-responsive embed-responsive-16by9">
+        <h3>Hear what one user has to say about CorkCRM</h3>
+        <p>"Donec sed odio dui. Cras justo odio, dapibus ac quam. Vestibulum id ligula porta felis euismod semper."</p>
+      </div>
     </div>
+  </div>
   </div>
 </section>
 <!-- Brand Strip -->
@@ -65,36 +72,13 @@
   <div class="brands">
     <div class="container">
       <div class="row">
-        <div class="col-md-12">
-          <h2>Our Friends</h2>
-        </div>
+        {# <div class="col-md-12">
+          <h2>Some of our awesome users!</h2>
+        </div> #}
       </div>
       <div class="row">
-        <div class="col-sm-3 col-xs-6 vcenter">
-          <img src="assets/images/greenpeakLogo2.png" alt="logo" />
-        </div>
-        <div class="col-sm-3 col-xs-6 vcenter">
-          <img src="assets/images/amiga.png" alt="logo" />
-        </div>
-        <div class="col-sm-3 col-xs-6 vcenter">
-          <img src="assets/images/greenpeakLogo2.png" alt="logo" />
-        </div>
-        <div class="col-sm-3 col-xs-6 vcenter">
-          <img src="assets/images/logo_placeholder.png" alt="logo" />
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-3 col-xs-6 vcenter">
-          <img src="assets/images/kayak.jpg" alt="logo" />
-        </div>
-        <div class="col-sm-3 col-xs-6 vcenter">
-          <img src="assets/images/phlogo.png" alt="logo" />
-        </div>
-        <div class="col-sm-3 col-xs-6 vcenter">
-          <img src="assets/images/logo_placeholder.png" alt="logo" />
-        </div>
-        <div class="col-sm-3 col-xs-6 vcenter">
-          <img src="assets/images/spacecraft-logo-placeholder.png" alt="logo" />
+        <div class="col-sm-12 col-xs-12 vcenter">
+          <img src="assets/images/brand-logos-wide.png" alt="logo" />
         </div>
       </div>
     </div>

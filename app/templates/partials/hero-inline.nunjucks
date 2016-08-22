@@ -1,0 +1,13 @@
+<div class="hero-inline">
+  <div class="jumbotron banner">
+    <div class="overlay">
+      <h2>A Better Way to Run Your Painting Business</h2>
+      <h3>All-in-one software to manage leads, appointments, proposals, and jobs.</h3>
+      <div class="call-to-action">
+        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Your email">
+        <input type="password" class="form-control" id="exampleInputEmail2" placeholder="Your email">
+        <a class="btn btn-lg btn-success" href="#" role="button">Give it a run</a>
+      </div>
+    </div>
+  </div>
+</div>
