@@ -23,6 +23,9 @@
   border: none;
   color: #fff;
   box-shadow: none;
+  &::placeholder {
+    color: rgba(255,255,255,0.5);
+  }
 }
 .form-group {
   margin-bottom: 0px;
@@ -54,6 +57,9 @@ textarea {
   padding-left: 12px;
   border: none;
   border-radius: 2px;
+  &::placeholder {
+    color: rgba(255,255,255,0.5);
+  }
 }
 
 /*==== FOOTER ====*/
