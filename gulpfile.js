@@ -8,7 +8,7 @@ gulp.task('webserver', function() {
   gulp.src('app')
     .pipe(webserver({
       fallback: 'index.html',
-      livereload: true,
+      livereload: false,
       directoryListing: false,
       open: true,
     }));

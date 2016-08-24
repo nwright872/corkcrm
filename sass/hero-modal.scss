@@ -1,12 +1,15 @@
 .hero-modal{
   .jumbotron{
     padding: 0px;
-    // height: 100vh;
+
 
   }
   .banner {
-    background-repeat:repeat-x;
-    background-position: bottom;
+    background: url('/assets/images/paint-texture.jpg');
+    background-size: cover;
+    // background-position: 0 -426px;
+    // background-repeat:repeat-x;
+    // background-position: bottom;
     background-attachment: fixed;
     overflow: hidden;
     z-index: -1;
@@ -14,8 +17,9 @@
 
   }
   .overlay{
-    background-color: rgba(18, 129, 162, 0.86);
-    background: linear-gradient(to bottom right, rgb(102, 195, 230), rgb(69, 143, 194));
+    background: rgba(255,255,255,0.1);
+    // background-color: rgba(18, 129, 162, 0.86);
+    // background: linear-gradient(to bottom right, rgb(102, 195, 230), rgb(69, 143, 194));
     z-index: 2;
     padding: 42px;
       h2{

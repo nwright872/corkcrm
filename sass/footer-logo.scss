@@ -2,13 +2,14 @@
 
 .calltoaction {
   text-align: center;
-  padding-top:  12px;
+
   padding-bottom: 75px;
-  background-color: #4195CE;
+  background-color: #458fc2;
   color: #fff;
   h3 {
     padding-bottom: 15px;
     margin-bottom: 0px;
+    font-weight: 100;
   }
   .btn  {
     margin-top: 15px;
@@ -66,7 +67,7 @@ textarea {
 
 footer {
   padding: 45px;
-  padding-top: 15px;
+  padding-top: 0px;
   background-color: #216fb2;
   color: white;
   h3{
@@ -110,12 +111,12 @@ footer {
 .footer-logo {
   text-align: center;
   position: relative;
-  top: -39px;
+  top: -20px;
   img {
     border-radius: 3px;
     z-index: 1;
     background-color: darkgray;
-    max-width: 300px;
+    max-width: 260px;
     width: 100%;
   }
 }

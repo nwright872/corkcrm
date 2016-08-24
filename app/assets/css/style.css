@@ -4987,12 +4987,20 @@ body.modal-open {
   overflow: inherit;
   padding-right: 0 !important; }
 
+section {
+  padding: 50px; }
+
 h1, h2, h3 {
   font-family: 'Open Sans', sans-serif; }
 
 h1 {
   font-weight: 100;
   font-size: 30px; }
+
+h2 {
+  font-size: 2.1em;
+  text-align: center;
+  font-weight: 100; }
 
 p {
   margin: 0px; }
@@ -5008,13 +5016,15 @@ p {
   padding: 10px 15px 15px 15px; }
 
 .navbar-default .navbar-nav > li > a {
+  font-weight: 300;
   border-top: solid transparent 4px;
-  color: rgba(0, 0, 0, 0.52);
+  color: rgba(255, 255, 255, 0.7);
   font-family: 'Lato', sans-serif;
   font-size: 17px; }
   .navbar-default .navbar-nav > li > a.active {
     border-top: solid #fff 4px; }
   .navbar-default .navbar-nav > li > a.sign-up {
+    font-weight: 400;
     border-top: solid transparent 4px;
     color: #fff; }
     .navbar-default .navbar-nav > li > a.sign-up.active {
@@ -5042,97 +5052,95 @@ p {
   padding: 0px; }
 
 .jumbotron h2, h1 {
-  padding-top: 61px;
+  padding-top: 80px;
   font-size: 30px !important; }
 
-.benefits {
-  background-color: #fff;
-  padding-top: 50px; }
-
-.benefit {
-  text-align: center;
-  padding: 20px; }
-
-.benefits {
-  border-radius: 4px;
+.workflow {
   background-color: white;
-  padding: 20px;
-  position: relative; }
-
-i.cool-icon {
-  border-color: transparent;
-  font-size: 3rem;
-  color: white;
   position: relative;
-  border-radius: 50%;
-  padding: 23px;
-  margin: 3px;
-  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, -webkit-transform 0.2s ease;
-  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
-  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease, -webkit-transform 0.2s ease; }
+  background-color: #fff; }
+  .workflow h2 {
+    margin-bottom: 50px; }
+  .workflow .arrow {
+    background: #458fc2;
+    height: 3px;
+    margin: 0;
+    position: relative;
+    top: 80px; }
 
-i.cool-icon:after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  border: solid 2px;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  border-radius: 50%; }
-
-i.cool-icon:nth-of-type(1) {
-  background-color: #458fc2;
-  border-color: #458fc2; }
-
-i.cool-icon:hover {
-  cursor: pointer;
-  box-shadow: none; }
-
-.icon-wrapper {
-  border-radius: 110%;
-  width: 105px;
-  /* -webkit-perspective: 150px; */
-  -webkit-perspective: 301px;
-  perspective: 301px;
-  margin: auto; }
-  .icon-wrapper:hover i.fa {
-    -webkit-transform: rotateY(180deg);
-    transform: rotateY(180deg);
+.workflow-step {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+  float: left;
+  width: 20%; }
+  .workflow-step h3 {
+    font-size: 1.4em;
+    font-weight: 600;
+    color: #458fc2; }
+  .workflow-step .icon-wrapper .fa {
     transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, -webkit-transform 0.3s ease;
     transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, transform 0.3s ease;
     transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
-    border-color: #458fc2;
-    color: #458fc2;
-    background-color: transparent;
-    top: 0px;
-    left: 0px;
-    position: relative;
-    cursor: pointer; }
+    background: #458fc2;
+    color: #fff;
+    border-radius: 50%;
+    border: 3px solid #458fc2; }
+  .workflow-step .icon-wrapper {
+    border-radius: 110%;
+    display: inline-block;
+    -webkit-perspective: 301px;
+    perspective: 301px;
+    margin: auto;
+    background: #fff; }
+    .workflow-step .icon-wrapper:hover i.fa {
+      -webkit-transform: rotateY(180deg);
+      transform: rotateY(180deg);
+      border-color: #458fc2;
+      color: #458fc2;
+      background-color: #fff;
+      top: 0px;
+      left: 0px;
+      position: relative;
+      cursor: pointer; }
+
+.benefits {
+  background: #458fc2;
+  color: #fff; }
+  .benefits h2 {
+    margin-top: 40px;
+    text-align: center;
+    font-weight: 100; }
+  .benefits h3 {
+    font-size: 1.4em;
+    font-weight: 600; }
+  .benefits ul {
+    padding: 0; }
+  .benefits li {
+    text-align: center;
+    list-style: none; }
 
 .testimonials {
-  box-shadow: inset 0px -2px 71px 3px rgba(8, 8, 8, 0.65);
-  color: #fff;
-  background-color: #333333;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  height: 275px; }
+  box-shadow: inset 0px 10px 70px 0px rgba(8, 8, 8, 0.1);
+  color: #494C4C;
+  background-color: #fcfcfc; }
   .testimonials h3 {
+    font-size: 2em;
     text-align: left;
-    padding-bottom: 20px;
-    margin-top: 0px; }
+    padding-bottom: 10px;
+    margin-top: 0px;
+    font-weight: 200; }
   .testimonials p {
-    text-align: left; }
+    text-align: left;
+    font-size: 1.2em;
+    margin-bottom: 20px; }
   .testimonials .video-text {
     padding: 20px;
     padding-top: 0px; }
 
 .brands {
   text-align: center;
-  margin-top: 10%;
   background-color: #fff;
   padding-bottom: 30px; }
 
@@ -5186,15 +5194,14 @@ hr {
   border-top: 1px dashed #8c8b8b; }
 
 @media (max-width: 444px) {
-  .benefits h3 {
-    letter-spacing: -2px;
+  .workflow h3 {
     font-size: 19px; } }
 
-@media (min-width: 601px) {
+@media (max-width: 992px) {
   i.cool-icon {
     padding: 30px;
     margin: 10px;
-    font-size: 3rem; } }
+    font-size: 1.6em; } }
 
 @media (max-width: 768px) {
   .testimonials {
@@ -5208,119 +5215,25 @@ hr {
   i.cool-icon {
     padding: 30px;
     margin: 10px;
-    font-size: 4rem; }
+    font-size: 1.9em; }
   i.cool-icon:after {
     border-width: 3px;
     top: 0px;
     left: 0px; } }
 
-.hero-inline .jumbotron {
-  padding: 0px;
-  height: 100vh; }
-
-.hero-inline .banner {
-  background-image: url("/assets/images/painted-room.jpg");
-  background-repeat: repeat-x;
-  background-position: bottom;
-  background-attachment: fixed;
-  overflow: hidden;
-  z-index: -1;
-  width: 100%; }
-
-.hero-inline .overlay {
-  background-color: rgba(18, 129, 162, 0.86);
-  background: linear-gradient(to bottom right, rgba(169, 251, 255, 0.92), rgba(33, 110, 178, 0.96));
-  z-index: 2;
-  padding: 30px;
-  height: 100vh; }
-  .hero-inline .overlay h2 {
-    padding-top: 120px; }
-  .hero-inline .overlay .btn-success {
-    background-color: #3acc1d;
-    border-color: #55b942;
-    height: 34px;
-    padding-top: 5px; }
-  .hero-inline .overlay .btn-success:hover {
-    background-color: #36ad1e;
-    border-color: transparent; }
-
-.hero-inline .call-to-action {
-  margin: auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  max-width: 600px;
-  width: 100%;
-  padding-top: 26px;
-  padding-bottom: 26px;
-  border-radius: 3px;
-  text-align: center;
-  background-color: rgba(215, 240, 255, 0.23); }
-  .hero-inline .call-to-action .form-control {
-    color: #666;
-    background-color: white;
-    max-width: 200px;
-    display: inline-block;
-    margin: 5px; }
-
-.hero-redirect .jumbotron {
-  padding: 0px; }
-
-.hero-redirect .banner {
-  background-image: url("/assets/images/painted-room.jpg");
-  background-repeat: repeat-x;
-  background-position: bottom;
-  background-attachment: fixed;
-  overflow: hidden;
-  z-index: -1;
-  width: 100%; }
-
-.hero-redirect .overlay {
-  background-color: rgba(18, 129, 162, 0.86);
-  background: linear-gradient(to bottom right, rgba(169, 251, 255, 0.92), rgba(33, 110, 178, 0.96));
-  z-index: 2;
-  padding: 30px; }
-  .hero-redirect .overlay h2 {
-    padding-top: 120px; }
-  .hero-redirect .overlay .btn-success {
-    background-color: #3acc1d;
-    border-color: #55b942;
-    height: 34px;
-    padding-top: 5px; }
-  .hero-redirect .overlay .btn-success:hover {
-    background-color: #36ad1e;
-    border-color: transparent; }
-
-.hero-redirect .call-to-action {
-  margin: auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  max-width: 600px;
-  width: 100%;
-  padding-top: 26px;
-  padding-bottom: 26px;
-  border-radius: 3px;
-  text-align: center; }
-  .hero-redirect .call-to-action .form-control {
-    color: #666;
-    background-color: white;
-    max-width: 200px;
-    display: inline-block;
-    margin: 5px; }
-
 .hero-modal .jumbotron {
   padding: 0px; }
 
 .hero-modal .banner {
-  background-repeat: repeat-x;
-  background-position: bottom;
+  background: url("/assets/images/paint-texture.jpg");
+  background-size: cover;
   background-attachment: fixed;
   overflow: hidden;
   z-index: -1;
   width: 100%; }
 
 .hero-modal .overlay {
-  background-color: rgba(18, 129, 162, 0.86);
-  background: linear-gradient(to bottom right, #66c3e6, #458fc2);
+  background: rgba(255, 255, 255, 0.1);
   z-index: 2;
   padding: 42px; }
   .hero-modal .overlay h2 {
@@ -5404,13 +5317,13 @@ hr {
 /*==== CALL TO ACTION ====*/
 .calltoaction {
   text-align: center;
-  padding-top: 12px;
   padding-bottom: 75px;
-  background-color: #4195CE;
+  background-color: #458fc2;
   color: #fff; }
   .calltoaction h3 {
     padding-bottom: 15px;
-    margin-bottom: 0px; }
+    margin-bottom: 0px;
+    font-weight: 100; }
   .calltoaction .btn {
     margin-top: 15px; }
 
@@ -5471,7 +5384,7 @@ textarea {
 /*==== FOOTER ====*/
 footer {
   padding: 45px;
-  padding-top: 15px;
+  padding-top: 0px;
   background-color: #216fb2;
   color: white; }
   footer h3 {
@@ -5505,12 +5418,12 @@ footer {
 .footer-logo {
   text-align: center;
   position: relative;
-  top: -39px; }
+  top: -20px; }
   .footer-logo img {
     border-radius: 3px;
     z-index: 1;
     background-color: darkgray;
-    max-width: 300px;
+    max-width: 260px;
     width: 100%; }
 
 .socialMediaIcons {

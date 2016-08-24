@@ -1,3 +1,5 @@
+$brand-blue: #458fc2;
+
 .form-control:focus {
     outline: none;
     box-shadow: none;
@@ -9,6 +11,9 @@ body.modal-open {
   overflow: inherit;
   padding-right: 0 !important;
 }
+section {
+  padding: 50px;
+}
 h1, h2, h3{
   font-family: 'Open Sans', sans-serif;
 }
@@ -16,18 +21,18 @@ h1{
   font-weight: 100;
   font-size: 30px;
 }
+h2 {
+  font-size: 2.1em;
+  text-align: center;
+  font-weight: 100;
+}
 p {
   margin: 0px;
 }
-a.active  {
-  // border-top: solid 2px #fff;
-}
+
 .navbar {
   position: absolute;
   background-color: transparent;
-  // -webkit-box-shadow: 0 4px 3px -3px rgba(65, 149, 206, 0.2);
-  // -moz-box-shadow: 0 4px 3px -3px rgba(65, 149, 206, 0.2);
-  // box-shadow: 0 4px 3px -3px rgba(65, 149, 206, 0.2);
 }
 .navbar-brand > img{
   width: 169px;
@@ -38,14 +43,16 @@ a.active  {
 .navbar-brand.nav:hover{
 }
 .navbar-default .navbar-nav>li>a {
+  font-weight: 300;
   border-top: solid transparent 4px;
-  color: rgba(0, 0, 0, 0.52);
+  color: rgba(255,255,255,0.7);
   font-family: 'Lato', sans-serif;
   font-size: 17px;
   &.active{
     border-top: solid #fff 4px;
   }
   &.sign-up{
+    font-weight: 400;
     border-top: solid transparent 4px;
     color: #fff;
     &.active{
@@ -54,8 +61,6 @@ a.active  {
   }
 }
 .navbar-default .navbar-nav>li>a:hover {
-  // background-color: #4195CE;
-  // color: #fff;
   color: #216eb2;
 }
 
@@ -67,16 +72,9 @@ a.active  {
   border-style: none;
   font-size: larger;
 }
-// .navbar-collapse {
-//   background-color: rgba(0, 0, 0, 0.79);
-//   .navbar-nav > li > a {
-//     color: #fff;
-//   }
-// }
 .input-group .form-control{
   color: #555;
 }
-
 .jumbotron {
   text-align: center;
   top: 50%;
@@ -85,113 +83,106 @@ a.active  {
   padding: 0px;
 }
 .jumbotron h2, h1 {
-  padding-top: 61px;
+  padding-top: 80px;
   font-size: 30px!important;
 }
-// featurs
-.benefits {
+// WORKFLOW
+.workflow {
+  background-color: white;
+  position: relative;
   background-color: #fff;
-  padding-top: 50px;
-}
-.benefit {
-  text-align: center;
-  padding: 20px;
-}
-.benefits {
-		border-radius: 4px;
-		background-color: white;
-		padding: 20px;
-		// box-shadow: 0 1px 1px rgba(0, 0, 0, 0.16), 0 1px 19px rgba(0, 0, 0, 0.23);
-		position: relative;
-}
 
-i.cool-icon {
-    border-color: transparent;
-		font-size: 3rem;
-		color: white;
-		position: relative;
-		border-radius: 50%;
-		padding: 23px;
-		margin: 3px;
-		// box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-		transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
-}
-
-i.cool-icon:after {
-		content: "";
-		width: 100%;
-		height: 100%;
-		border: solid 2px;
-		transform: scale(1);
-		position: absolute;
-		top: 0px;
-		left: 0px;
-		border-radius: 50%;
-		// transition: all 0.2s ease;
-}
-
-i.cool-icon:hover:after {
-		// transform: scale(1);
-		// box-shadow: 10px 0 20px rgba(0, 0, 0, 0.19), 6px 0 6px rgba(0, 0, 0, 0.23);
-}
-
-i.cool-icon:nth-of-type(1) {
-		background-color: #458fc2;
-    border-color: #458fc2;
-}
-
-// i.cool-icon:nth-of-type(1):hover {
-// 		color: #458fc2;
-// }
-// i.cool-icon:nth-of-type(1):after {
-// 		border-color: #458fc2;
-// }
-i.cool-icon:hover {
-		// background-color: transparent;
-
-		cursor: pointer;
-		box-shadow: none;
-}
-.icon-wrapper{
-  border-radius: 110%;
-  width: 105px;
-  /* -webkit-perspective: 150px; */
-  perspective: 301px;
-  margin: auto;
-  &:hover i.fa {
-    transform: rotateY(180deg);
-    transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, transform 0.3s ease;
-    border-color: #458fc2;
-    color: #458fc2;
-    background-color: transparent;
-    top: 0px;
-		left: 0px;
+  h2 {
+    margin-bottom: 50px;
+  }
+  .arrow {
+    background: $brand-blue;
+    height: 3px;
+    margin: 0;
     position: relative;
-    cursor: pointer;
-
+    top: 80px;
   }
 }
-.testimonials {
-  box-shadow: inset 0px -2px 71px 3px rgba(8, 8, 8, 0.65);
+.workflow-step {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+  float: left;
+  width: 20%;
+  h3 {
+    font-size: 1.4em;
+    font-weight: 600;
+    color: $brand-blue;
+  }
+  .icon-wrapper .fa {
+    transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, transform 0.3s ease;
+    background: $brand-blue;
+    color: #fff;
+    border-radius: 50%;
+    border: 3px solid $brand-blue;
+  }
+  .icon-wrapper{
+    border-radius: 110%;
+    display: inline-block;
+    perspective: 301px;
+    margin: auto;
+    background: #fff;
+    &:hover i.fa {
+      transform: rotateY(180deg);
+      border-color: $brand-blue;
+      color: $brand-blue;
+      background-color: #fff;
+      top: 0px;
+      left: 0px;
+      position: relative;
+      cursor: pointer;
+    }
+  }
+}
+
+// CUSTOMER BENEFIT
+.benefits {
+  background: $brand-blue;
   color: #fff;
-  background-color: #333333;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  height: 275px;
-  // margin-bottom: 110px;
+  h2 {
+    margin-top: 40px;
+    text-align: center;
+    font-weight: 100;
+  }
+  h3 {
+    font-size: 1.4em;
+    font-weight: 600;
+  }
+  ul {
+    padding: 0;
+  }
+  li {
+    text-align: center;
+    list-style: none;
+  }
+}
+
+.testimonials {
+  box-shadow: inset 0px 10px 70px 0px rgba(8, 8, 8, 0.1);
+  color: #494C4C;
+  background-color: #fcfcfc;
+  // height: 275px;
   h3{
+    font-size: 2em;
     text-align: left;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     margin-top: 0px;
+    font-weight: 200;
   }
   p{
     text-align: left;
+    font-size: 1.2em;
+    margin-bottom: 20px;
   }
   .video-text{
     padding: 20px;
     padding-top: 0px;
-    // border: #458fc2 solid 4px;
-    // border-radius: 4px;
   }
 }
 
@@ -199,19 +190,10 @@ i.cool-icon:hover {
 // brands
 .brands  {
   text-align: center;
-  margin-top: 10%;
   background-color: #fff;
   padding-bottom: 30px;
 
 }
-// .brand-image{
-//   background-image: url(../images/brand-logos-wide.png) !important;
-//   width: 100%;
-//   max-width: 1170px;
-//   align-items: center;
-//   vertical-align: middle;
-//
-// }
 .brands img {
   width: 100%;
   max-width: 1170px;
@@ -259,18 +241,17 @@ hr {
   border-top: 1px dashed #8c8b8b;
 }
 @media (max-width:444px) {
-  .benefits{
+  .workflow{
     h3{
-      letter-spacing: -2px;
       font-size: 19px;
     }
   }
 }
-@media (min-width:601px) {
+@media (max-width:992px) {
 	i.cool-icon {
 		padding:30px;
 		margin:10px;
-		font-size:3rem;
+		font-size: 1.6em;
 	}
 }
 @media (max-width:768px) {
@@ -288,7 +269,7 @@ hr {
 	i.cool-icon {
 		padding:30px;
 		margin:10px;
-		font-size:4rem;
+		font-size: 1.9em;
 	}
 	i.cool-icon:after {
 		border-width:3px;
