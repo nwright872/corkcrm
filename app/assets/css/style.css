@@ -4976,10 +4976,6 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
-.form-control:focus {
-  outline: none;
-  box-shadow: none; }
-
 body {
   font-family: 'Lato', sans-serif; }
 
@@ -5002,8 +4998,32 @@ h2 {
   text-align: center;
   font-weight: 100; }
 
+h3 {
+  font-weight: 200; }
+
 p {
-  margin: 0px; }
+  margin: 0px;
+  font-size: 1.2em; }
+
+.btn, input {
+  border-radius: 0; }
+
+.btn.btn-brand {
+  border: 2px solid #458fc2;
+  color: #458fc2;
+  font-size: 1.2em; }
+  .btn.btn-brand:hover {
+    background: #458fc2;
+    color: #fff; }
+
+.form-control, input.form-control, textarea.form-control {
+  border-radius: 0; }
+  .form-control:focus, input.form-control:focus, textarea.form-control:focus {
+    outline: none;
+    box-shadow: none; }
+
+.input-group {
+  max-width: 240px; }
 
 .navbar {
   position: absolute;
@@ -5013,14 +5033,15 @@ p {
   width: 169px; }
 
 .navbar-brand {
-  padding: 10px 15px 15px 15px; }
+  padding: 20px 15px 15px 15px; }
 
 .navbar-default .navbar-nav > li > a {
   font-weight: 300;
   border-top: solid transparent 4px;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.85);
   font-family: 'Lato', sans-serif;
-  font-size: 17px; }
+  font-size: 17px;
+  padding-top: 20px; }
   .navbar-default .navbar-nav > li > a.active {
     border-top: solid #fff 4px; }
   .navbar-default .navbar-nav > li > a.sign-up {
@@ -5114,7 +5135,7 @@ p {
     font-weight: 100; }
   .benefits h3 {
     font-size: 1.4em;
-    font-weight: 600; }
+    font-weight: 400; }
   .benefits ul {
     padding: 0; }
   .benefits li {
@@ -5123,14 +5144,17 @@ p {
 
 .testimonials {
   box-shadow: inset 0px 10px 70px 0px rgba(8, 8, 8, 0.1);
-  color: #494C4C;
-  background-color: #fcfcfc; }
+  color: #333;
+  background-color: #fcfcfc;
+  height: 310px;
+  margin-bottom: 20px; }
   .testimonials h3 {
+    color: #004266;
     font-size: 2em;
     text-align: left;
     padding-bottom: 10px;
     margin-top: 0px;
-    font-weight: 200; }
+    font-weight: 500; }
   .testimonials p {
     text-align: left;
     font-size: 1.2em;
@@ -5235,44 +5259,34 @@ hr {
 .hero-modal .overlay {
   background: rgba(255, 255, 255, 0.1);
   z-index: 2;
-  padding: 42px; }
+  padding: 55px; }
   .hero-modal .overlay h2 {
     padding-top: 86px; }
-  .hero-modal .overlay .btn-success {
-    background-color: #3acc1d;
-    border-color: #55b942;
-    height: 34px;
-    padding-top: 5px; }
-  .hero-modal .overlay .btn-success:hover {
-    background-color: #36ad1e;
-    border-color: transparent; }
+
+.hero-modal input.form-control {
+  padding: 18px 10px;
+  font-size: 1.2em;
+  border: 1px solid #ccc; }
+  .hero-modal input.form-control::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.5); }
+  .hero-modal input.form-control::-moz-placeholder {
+    color: rgba(0, 0, 0, 0.5); }
+  .hero-modal input.form-control:-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.5); }
+  .hero-modal input.form-control::placeholder {
+    color: rgba(0, 0, 0, 0.5); }
+
+.hero-modal .input-group-btn {
+  font-size: 1.2em; }
+  .hero-modal .input-group-btn .btn {
+    padding: 7px 15px 6px 15px;
+    font-size: 1em;
+    font-weight: 300; }
 
 .hero-modal .call-to-action {
-  margin: auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  max-width: 600px;
-  width: 100%;
-  padding-top: 26px;
-  padding-bottom: 26px;
-  border-radius: 3px;
-  text-align: center; }
+  margin: 55px auto; }
   .hero-modal .call-to-action .form-control {
-    color: #000;
-    background-color: #fff;
-    max-width: 200px;
-    display: inline-block;
-    margin: 5px; }
-  .hero-modal .call-to-action ::-webkit-input-placeholder {
-    color: rgba(0, 0, 0, 0.5); }
-  .hero-modal .call-to-action :-moz-placeholder {
-    /* Firefox 18- */
-    color: rgba(0, 0, 0, 0.5); }
-  .hero-modal .call-to-action ::-moz-placeholder {
-    /* Firefox 19+ */
-    color: rgba(0, 0, 0, 0.5); }
-  .hero-modal .call-to-action :-ms-input-placeholder {
-    color: rgba(0, 0, 0, 0.5); }
+    background: #fff; }
 
 .hero-modal .form-box {
   margin: auto;
@@ -5286,12 +5300,6 @@ hr {
 
 .hero-modal .form-box h1 span {
   font-weight: lighter; }
-
-.hero-modal .input-group {
-  margin: auto;
-  max-width: 260px;
-  margin-bottom: 12px;
-  color: #555; }
 
 .hero-modal .modal-footer {
   border-top: none; }
@@ -5347,12 +5355,6 @@ hr {
 .form-group {
   margin-bottom: 0px; }
 
-.input-group {
-  max-width: 260px; }
-  .input-group .btn {
-    margin-top: 15px;
-    border-color: #cccccc; }
-
 button.btn.btn-primary {
   margin-top: 15px;
   background-color: #4195ce; }
@@ -5385,7 +5387,8 @@ textarea {
 footer {
   padding: 45px;
   padding-top: 0px;
-  background-color: #216fb2;
+  background-color: #334044;
+  border-top: 4px solid #fff;
   color: white; }
   footer h3 {
     margin-bottom: 20px; }
@@ -5418,17 +5421,19 @@ footer {
 .footer-logo {
   text-align: center;
   position: relative;
-  top: -20px; }
+  top: -24px; }
   .footer-logo img {
+    padding: 6px 0;
     border-radius: 3px;
     z-index: 1;
-    background-color: darkgray;
-    max-width: 260px;
+    background-color: #fff;
+    max-width: 220px;
     width: 100%; }
 
 .socialMediaIcons {
   display: block;
-  margin: 0 0; }
+  margin: 0 0;
+  font-weight: 300; }
   .socialMediaIcons span {
     margin-right: 10px; }
   .socialMediaIcons .fa {

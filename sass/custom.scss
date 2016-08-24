@@ -1,9 +1,5 @@
 $brand-blue: #458fc2;
 
-.form-control:focus {
-    outline: none;
-    box-shadow: none;
-}
 body{
   font-family: 'Lato', sans-serif;
 }
@@ -26,8 +22,36 @@ h2 {
   text-align: center;
   font-weight: 100;
 }
+h3 {
+  font-weight: 200;
+}
 p {
   margin: 0px;
+  font-size: 1.2em;
+}
+
+.btn, input {
+  border-radius: 0;
+}
+.btn.btn-brand {
+  border: 2px solid $brand-blue;
+  color: $brand-blue;
+  font-size: 1.2em;
+  &:hover {
+    background: $brand-blue;
+    color: #fff;
+  }
+}
+.form-control, input.form-control, textarea.form-control {
+  border-radius: 0;
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.input-group {
+  max-width: 240px;
 }
 
 .navbar {
@@ -38,16 +62,15 @@ p {
   width: 169px;
 }
 .navbar-brand{
-  padding: 10px 15px 15px 15px
-}
-.navbar-brand.nav:hover{
+  padding: 20px 15px 15px 15px
 }
 .navbar-default .navbar-nav>li>a {
   font-weight: 300;
   border-top: solid transparent 4px;
-  color: rgba(255,255,255,0.7);
+  color: rgba(255,255,255,0.85);
   font-family: 'Lato', sans-serif;
   font-size: 17px;
+  padding-top:20px;
   &.active{
     border-top: solid #fff 4px;
   }
@@ -152,7 +175,7 @@ p {
   }
   h3 {
     font-size: 1.4em;
-    font-weight: 600;
+    font-weight: 400;
   }
   ul {
     padding: 0;
@@ -165,15 +188,17 @@ p {
 
 .testimonials {
   box-shadow: inset 0px 10px 70px 0px rgba(8, 8, 8, 0.1);
-  color: #494C4C;
+  color: #333;
   background-color: #fcfcfc;
-  // height: 275px;
+  height: 310px;
+  margin-bottom: 20px;
   h3{
+    color: #004266;
     font-size: 2em;
     text-align: left;
     padding-bottom: 10px;
     margin-top: 0px;
-    font-weight: 200;
+    font-weight: 500;
   }
   p{
     text-align: left;

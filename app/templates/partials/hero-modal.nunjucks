@@ -5,11 +5,11 @@
     <div class="overlay">
       <h1>A Better Way to Run Your Painting Business</h1>
       <h3>All-in-one software to manage leads, appointments, proposals, and jobs.</h3>
-      <div class="call-to-action">
+      <div class="call-to-action input-group">
         <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Your email">
-        <button type="button" class="btn btn-lg btn-success" data-toggle="modal" data-target="#myModal">
-          Start now
-        </button>
+        <span class="input-group-btn">
+          <button class="btn btn-success" type="button" data-toggle="modal" data-target="#myModal">Go!</button>
+        </span>
       </div>
     </div>
   </div>

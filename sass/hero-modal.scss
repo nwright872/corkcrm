@@ -1,70 +1,44 @@
 .hero-modal{
   .jumbotron{
     padding: 0px;
-
-
   }
   .banner {
     background: url('/assets/images/paint-texture.jpg');
     background-size: cover;
-    // background-position: 0 -426px;
-    // background-repeat:repeat-x;
-    // background-position: bottom;
     background-attachment: fixed;
     overflow: hidden;
     z-index: -1;
     width: 100%;
-
   }
   .overlay{
     background: rgba(255,255,255,0.1);
-    // background-color: rgba(18, 129, 162, 0.86);
-    // background: linear-gradient(to bottom right, rgb(102, 195, 230), rgb(69, 143, 194));
     z-index: 2;
-    padding: 42px;
+    padding: 55px;
       h2{
         padding-top: 86px;
       }
-      .btn-success{
-        background-color: #3acc1d;
-        border-color: #55b942;
-        height: 34px;
-        padding-top: 5px;
-      }
-      .btn-success:hover{
-        background-color: #36ad1e;
-        border-color: transparent;
-      }
   }
-  .call-to-action{
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    max-width: 600px;
-    width: 100%;
-    padding-top: 26px;
-    padding-bottom: 26px;
-    border-radius: 3px;
-    text-align: center;
+  input.form-control {
+    padding: 18px 10px;
+    font-size: 1.2em;
+    border: 1px solid #ccc;
+    &::placeholder {
+      color: rgba(0,0,0,0.5);
+    }
+  }
+  .input-group-btn {
+    font-size: 1.2em;
+    .btn {
+      padding: 7px 15px 6px 15px;
+      font-size: 1em;
+      font-weight: 300;
+    }
+  }
 
+  .call-to-action{
+    margin: 55px auto;
     .form-control {
-      color: #000;
-      background-color: #fff;
-      max-width: 200px;
-      display: inline-block;
-      margin: 5px;
-    }
-    ::-webkit-input-placeholder {
-   color: rgba(0,0,0,0.5);;
-    }
-    :-moz-placeholder { /* Firefox 18- */
-       color: rgba(0,0,0,0.5);;
-    }
-    ::-moz-placeholder {  /* Firefox 19+ */
-       color: rgba(0,0,0,0.5);;
-    }
-    :-ms-input-placeholder {
-       color: rgba(0,0,0,0.5);;
+      background: #fff;
     }
   }
 
@@ -83,12 +57,6 @@
 
   .form-box h1 span {
       font-weight: lighter;
-  }
-  .input-group{
-    margin: auto;
-    max-width: 260px;
-    margin-bottom: 12px;
-    color: #555;
   }
   .modal-footer{
     border-top: none;

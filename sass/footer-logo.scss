@@ -31,13 +31,7 @@
 .form-group {
   margin-bottom: 0px;
 }
-.input-group {
-  max-width: 260px;
-  .btn {
-    margin-top: 15px;
-    border-color: rgb(204,204,204);
-  }
-}
+
 button.btn.btn-primary {
     margin-top: 15px;
     background-color: #4195ce;
@@ -68,7 +62,8 @@ textarea {
 footer {
   padding: 45px;
   padding-top: 0px;
-  background-color: #216fb2;
+  background-color: #334044;
+  border-top: 4px solid #fff;
   color: white;
   h3{
     margin-bottom: 20px;
@@ -111,12 +106,13 @@ footer {
 .footer-logo {
   text-align: center;
   position: relative;
-  top: -20px;
+  top: -24px;
   img {
+    padding: 6px 0;
     border-radius: 3px;
     z-index: 1;
-    background-color: darkgray;
-    max-width: 260px;
+    background-color: #fff;
+    max-width: 220px;
     width: 100%;
   }
 }
@@ -124,6 +120,7 @@ footer {
 .socialMediaIcons {
   display: block;
   margin: 0 0;
+  font-weight: 300;
   span {
     margin-right: 10px;
   }
