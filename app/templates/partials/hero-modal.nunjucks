@@ -57,7 +57,7 @@
                       </div>
                   <!-- phone field -->
                       <div class="form-group">
-                      <div id="phoneError" class="sr-only"" role="alert"></div>
+                      <div id="phoneError" class="sr-only" role="alert"></div>
                       <label for="form-phone-field" class="sr-only">Phone</label>
                           <div class="input-group">
                               <div class="input-group-addon"><span class="glyphicon glyphicon-phone"></span></div>
@@ -68,8 +68,8 @@
                       <label>
                           <input type="checkbox" id="checkbox-form"> I agree to terms and condition.
                       </label>
-                    <div id="term-field" class="well">
-                    </div>
+                    {# <div id="term-field" class="well">
+                    </div> #}
                   </div>
                 </form>
               </div>

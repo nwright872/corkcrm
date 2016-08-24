@@ -44,11 +44,23 @@
     text-align: center;
 
     .form-control {
-      color: rgb(255, 255, 255);
-      background-color: rgba(58, 118, 152, 0.82);
+      color: #000;
+      background-color: #fff;
       max-width: 200px;
       display: inline-block;
       margin: 5px;
+    }
+    ::-webkit-input-placeholder {
+   color: rgba(0,0,0,0.5);;
+    }
+    :-moz-placeholder { /* Firefox 18- */
+       color: rgba(0,0,0,0.5);;
+    }
+    ::-moz-placeholder {  /* Firefox 19+ */
+       color: rgba(0,0,0,0.5);;
+    }
+    :-ms-input-placeholder {
+       color: rgba(0,0,0,0.5);;
     }
   }
 
@@ -78,7 +90,21 @@
     border-top: none;
   }
   .modal-header{
-    background-color: #ffc800;
+    background-color: #6eaede;
     border-bottom: none;
+  }
+  .modal-body{
+    ::-webkit-input-placeholder {
+   color: rgba(0,0,0,0.5);;
+    }
+    :-moz-placeholder { /* Firefox 18- */
+       color: rgba(0,0,0,0.5);;
+    }
+    ::-moz-placeholder {  /* Firefox 19+ */
+       color: rgba(0,0,0,0.5);;
+    }
+    :-ms-input-placeholder {
+       color: rgba(0,0,0,0.5);;
+    }
   }
 }
