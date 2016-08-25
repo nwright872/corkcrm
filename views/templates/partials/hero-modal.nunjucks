@@ -1,0 +1,16 @@
+<!-- Hero Strip -->
+
+<section class="hero">
+  <div class="jumbotron hero-content">
+    <h1>A Better Way to Run Your Painting Business</h1>
+    <h3>All-in-one software to manage leads, appointments, proposals, and jobs.</h3>
+    <div class="hero-cta input-group">
+      <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Your email">
+      <span class="input-group-btn">
+        <button class="btn btn-success" type="button" data-toggle="modal" data-target="#myModal">Go!</button>
+      </span>
+    </div>
+  </div>
+</section>
+
+{% include "partials/modal.nunjucks" %}

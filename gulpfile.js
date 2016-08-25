@@ -26,10 +26,10 @@ gulp.task('styles', function() {
 
 gulp.task('nunjucks', function() {
   // Gets .html and .nunjucks files in pages
-  return gulp.src('app/pages/**/*.+(html|nunjucks)')
+  return gulp.src('views/pages/**/*.+(html|nunjucks)')
   // Renders template with nunjucks
   .pipe(nunjucksRender({
-      path: ['app/templates']
+      path: ['views/templates']
     }))
   // output files in app folder
   .pipe(gulp.dest('app'))
@@ -37,6 +37,6 @@ gulp.task('nunjucks', function() {
 
 gulp.task('default', ['webserver', 'styles', 'nunjucks'], function() {
     gulp.watch('./sass/**/*.scss', ['styles']);
-    gulp.watch('./app/templates/**/*.+(html|nunjucks)',['nunjucks']);
-    gulp.watch('./app/pages/**/*.+(html|nunjucks)',['nunjucks']);
+    gulp.watch('./views/templates/**/*.+(html|nunjucks)',['nunjucks']);
+    gulp.watch('./views/pages/**/*.+(html|nunjucks)',['nunjucks']);
 });

@@ -1,0 +1,210 @@
+
+.input-group .form-control{
+  color: #555;
+}
+.jumbotron {
+  text-align: center;
+  top: 50%;
+  color: white;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+.jumbotron h2, h1 {
+  padding-top: 80px;
+  font-size: 30px!important;
+}
+// WORKFLOW
+.workflow {
+  background-color: white;
+  position: relative;
+  background-color: #fff;
+  h2 {
+    margin-bottom: 50px;
+  }
+  .arrow {
+    background: $brand-blue;
+    height: 3px;
+    margin: 0;
+    position: relative;
+    top: 80px;
+  }
+  ul {
+    padding: 0;
+  }
+  li {
+    list-style: none;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    float: left;
+    width: 20%;
+    h3 {
+      font-size: 1.4em;
+      font-weight: 600;
+      color: $brand-blue;
+    }
+    .coin-icon-wrapper i.fa {
+      transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, transform 0.3s ease;
+      background: $brand-blue;
+      color: #fff;
+      border-radius: 50%;
+      border: 3px solid $brand-blue;
+      padding:30px;
+      margin:10px;
+      font-size: 1.9em;
+      &:after {
+        border-width:3px;
+        top:0px;
+        left:0px;
+      }
+    }
+    .coin-icon-wrapper {
+      border-radius: 110%;
+      display: inline-block;
+      perspective: 301px;
+      margin: auto;
+      background: #fff;
+      &:hover i.fa {
+        transform: rotateY(180deg);
+        border-color: $brand-blue;
+        color: $brand-blue;
+        background-color: #fff;
+        top: 0px;
+        left: 0px;
+        position: relative;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+// CUSTOMER BENEFIT
+.benefits {
+  background: $brand-blue;
+  color: #fff;
+  h2 {
+    margin-top: 40px;
+    text-align: center;
+    font-weight: 100;
+  }
+  h3 {
+    font-size: 1.4em;
+    font-weight: 400;
+  }
+  ul {
+    padding: 0;
+  }
+  li {
+    text-align: center;
+    list-style: none;
+  }
+}
+
+.testimonials {
+  box-shadow: inset 0px 10px 70px 0px rgba(8, 8, 8, 0.1);
+  color: #333;
+  background-color: #fcfcfc;
+  height: 310px;
+  margin-bottom: 20px;
+  h3{
+    color: #004266;
+    font-size: 2em;
+    text-align: left;
+    padding-bottom: 10px;
+    margin-top: 0px;
+    font-weight: 500;
+  }
+  p{
+    text-align: left;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  .video-text{
+    padding: 20px;
+    padding-top: 0px;
+  }
+}
+
+
+// brands
+.brands  {
+  text-align: center;
+  background-color: #fff;
+  padding-bottom: 30px;
+
+}
+.brands img {
+  width: 100%;
+  max-width: 1170px;
+  align-items: center;
+  vertical-align: middle;
+}
+.brands h2 {
+  margin-bottom: 30px;
+}
+.feature {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.feature img {
+  width: 100%;
+}
+.feature:nth-child(odd)  {
+    background: #eee;
+}
+.features {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.user {
+  text-align: center;
+}
+.userimg {
+  width: 70%;
+  border-radius: 60px;
+}
+.userlogo {
+  width: 50%;
+}
+.pricetag {
+  margin-left: 20px;
+  margin-bottom: 35px;
+  padding: 20px;
+  background-color: #eee;
+  text-align: center;
+}
+.price {
+  font-weight: bold;
+}
+hr {
+  border-top: 1px dashed #8c8b8b;
+}
+
+@media (max-width: $screen-lg) {
+	i.cool-icon {
+		padding:30px;
+		margin:10px;
+		font-size: 1.6em;
+	}
+}
+
+@media (max-width: $screen-md) {
+  .testimonials{
+    height: 100%;
+    .video-text{
+      padding-top: 20px;
+    }
+  }
+  .brands{
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: $screen-sm) {
+  .workflow{
+    h3{
+      font-size: 19px;
+    }
+  }
+}

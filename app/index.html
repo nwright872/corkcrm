@@ -47,79 +47,27 @@
 
 <!-- Hero Strip -->
 
-<div class="hero-modal">
-  <div class="jumbotron banner">
-    <div class="overlay">
-      <h1>A Better Way to Run Your Painting Business</h1>
-      <h3>All-in-one software to manage leads, appointments, proposals, and jobs.</h3>
-      <div class="call-to-action input-group">
-        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Your email">
-        <span class="input-group-btn">
-          <button class="btn btn-success" type="button" data-toggle="modal" data-target="#myModal">Go!</button>
-        </span>
-      </div>
+<section class="hero">
+  <div class="jumbotron hero-content">
+    <h1>A Better Way to Run Your Painting Business</h1>
+    <h3>All-in-one software to manage leads, appointments, proposals, and jobs.</h3>
+    <div class="hero-cta input-group">
+      <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Your email">
+      <span class="input-group-btn">
+        <button class="btn btn-success" type="button" data-toggle="modal" data-target="#myModal">Go!</button>
+      </span>
     </div>
   </div>
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-          <h4 class="modal-title" id="myModalLabel">Create Account</h4>
-        </div>
-        <div class="modal-body">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="form-box">
-                <form role="form" id="contact-form">
-                  <!-- name field -->
-                  <div class="form-group">
-                    <div id="nameError" class="sr-only" role="alert"></div>
-                    <label for="form-name-field" class="sr-only">First Name</label>
-                    <div class="input-group">
-                      <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
-                      <input type="text" class="form-control" id="form-name-field" value="" placeholder="Fist name">
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <div id="nameError" class="sr-only" role="alert"></div>
-                    <label for="form-name-field" class="sr-only">Last Name</label>
-                    <div class="input-group">
-                      <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
-                      <input type="text" class="form-control" id="form-name-field" value="" placeholder="Last name">
-                    </div>
-                  </div>
-                  <!-- email field -->
-                  <div class="form-group">
-                    <div id="emailError" class="sr-only" role="alert"></div>
-                    <label for="form-email-field" class="sr-only">Email</label>
-                    <div class="input-group">
-                      <div class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></div>
-                      <input type="email" class="form-control" id="form-email-field" value="" placeholder="Email">
-                    </div>
-                  </div>
-                  <!-- phone field -->
-                  <div class="form-group">
-                    <div id="phoneError" class="sr-only" role="alert"></div>
-                    <label for="form-phone-field" class="sr-only">Phone</label>
-                    <div class="input-group">
-                      <div class="input-group-addon"><span class="glyphicon glyphicon-phone"></span></div>
-                      <input type="tel" class="form-control" id="form-phone-field" value="" placeholder="Phone">
-                    </div>
-                  </div>
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox" id="checkbox-form"> I agree to terms and condition.
-                    </label>
-                    
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
+</section>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Create Account</h4>
+      </div>
+      <div class="modal-body">
+        <p>Hey Nick :)</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary">Submit</button>
@@ -127,47 +75,43 @@
     </div>
   </div>
 </div>
-</div>
 
-
-<!-- Benefits -->
 <section class="workflow">
   <div class="container">
     <h2>Everything you need, from start to finish.</h2>
-    <div class="row">
-      <div class="workflow-step">
-        <div class="icon-wrapper">
+    <ul class="row">
+      <li>
+        <div class="coin-icon-wrapper">
           <i class="fa fa-users fa-4x cool-icon" aria-hidden="true"></i>
         </div>
         <h3>Track Leads</h3>
-      </div>
-      <div class="workflow-step">
-        <div class="icon-wrapper">
+      </li>
+      <li>
+        <div class="coin-icon-wrapper">
           <i class="fa fa-calendar fa-4x cool-icon" aria-hidden="true"></i>
         </div>
         <h3>Book Appointments</h3>
-      </div>
-      <div class="workflow-step">
-        <div class="icon-wrapper">
+      </li>
+      <li>
+        <div class="coin-icon-wrapper">
           <i class="fa fa-file-text-o fa-4x cool-icon" aria-hidden="true"></i>
         </div>
         <h3>Create Proposals</h3>
-      </div>
-      <div class="workflow-step">
-        <div class="icon-wrapper">
+      </li>
+      <li>
+        <div class="coin-icon-wrapper">
           <i class="fa fa-pencil fa-4x cool-icon" aria-hidden="true"></i>
         </div>
         <h3>Sign Contracts</h3>
-      </div>
-      <div class="workflow-step">
-        <div class="icon-wrapper">
+      </li>
+      <li>
+        <div class="coin-icon-wrapper">
           <i class="fa fa-briefcase fa-4x cool-icon" aria-hidden="true"></i>
         </div>
         <h3>Schedule Jobs</h3>
-      </div>
+      </li>
       <div class="arrow"></div>
-    </div>
-    </div>
+    </ul>
   </div>
 </section>
 <section class="benefits">
@@ -191,50 +135,36 @@
       <li class="col-sm-4">
         <h3>Keep crews on task</h3>
       </li>
-
     </ul>
     <h2>...Focus on <strong>painting</strong> not paperwork.</h3>
   </div>
 </section>
-<!-- Video case -->
 <section class="testimonials">
   <div class="container">
     <div class="row">
-      <!-- video card -->
-      
-      <!-- simple video -->
       <div class="col-xs-12 col-sm-6 video">
         <div class="embed-responsive embed-responsive-16by9">
           <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Wc9rj4-A6FI?showinfo=0"></iframe>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-6">
-      <div class="video-text">
+      <div class="col-xs-12 col-sm-6 video-text">
         <h3>What CorkCRM does for my business</h3>
         <p>"Donec sed odio dui. Cras justo odio, dapibus ac quam. Vestibulum id ligula porta felis euismod semper."</p>
         <div class="btn btn-brand">Learn more</div>
       </div>
     </div>
   </div>
-  </div>
 </section>
-<!-- Brand Strip -->
-<section>
-  <div class="brands">
-    <div class="container">
-      <div class="row">
-        
-      </div>
-      <div class="row">
-        <div class="col-sm-12 col-xs-12 brand-image">
-          <img src="assets/images/brand-logos-wide.png" alt="logo" />
-        </div>
-      </div>
+<section class="customers">
+  <div class="container">
+    <div class="customer-logos">
+      <img src="assets/images/brand-logos-wide.png" alt="logo" />
     </div>
   </div>
 </section>
+
 <!-- Footer -->
-<section class="calltoaction">
+<section class="call-to-action">
   <h3>Claim your 14-day free trial. no credit card required.</h3>
   <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
 </section>
@@ -243,35 +173,27 @@
     <img src="./assets/images/CorkCRM-logo.jpg" alt="logo"/>
   </div>
   <div class="container">
+    <h3>Get in touch &amp; keep in touch.</h3>
     <div class="row">
-      <div class="col-xs-12">
-        <h3>Get in touch &amp; keep in touch.</h3>
-      </div>
       <div class="col-sm-6 col-xs-12 contact">
-        <div class="form-group">
-
-            <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Your email">
-            <textarea placeholder="Message goes here."></textarea>
-            <span class="input-group-btn">
-              <button type="submit" class="btn btn-primary">Send</button>
-            </span>
-
-        </div>
+        <form>
+          <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Your email">
+          <textarea placeholder="Message goes here."></textarea>
+          <button type="submit" class="btn btn-primary">Send</button>
+        </form>
       </div>
       <div class="col-sm-4">
-        <div class="row">
-          <div class="col-sm-12 col-xs-12 footer-contact">
-            <div class="socialMediaIcons">
-              <p><i class="fa fa-phone" aria-hidden="true"></i> (877) 222-7488</p>
-              <p><i class="fa fa-envelope" aria-hidden="true"></i> email@email.com</p>
-            </div>
-            <div class="footer-links">
-              <ul>
-                <li><a href="features.html">Features</a></li>
-                <li><a href="customers.html">Customers</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
-              </ul>
-            </div>
+        <div class="footer-contact">
+          <div class="contact-info">
+            <p><i class="fa fa-phone" aria-hidden="true"></i> (877) 222-7488</p>
+            <p><i class="fa fa-envelope" aria-hidden="true"></i> email@email.com</p>
+          </div>
+          <div class="footer-links">
+            <ul>
+              <li><a href="features.html">Features</a></li>
+              <li><a href="customers.html">Customers</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+            </ul>
           </div>
         </div>
       </div>

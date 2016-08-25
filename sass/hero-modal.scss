@@ -1,24 +1,20 @@
-.hero-modal{
-  .jumbotron{
-    padding: 0px;
-  }
-  .banner {
-    background: url('/assets/images/paint-texture.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    overflow: hidden;
-    z-index: -1;
-    width: 100%;
-  }
-  .overlay{
+.hero {
+  background: url('/assets/images/paint-texture.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  padding: 0;
+  .hero-content {
     background: rgba(255,255,255,0.1);
-    z-index: 2;
     padding: 55px;
-      h2{
-        padding-top: 86px;
-      }
+    padding-top: 72px;
   }
-  input.form-control {
+}
+
+.hero-cta {
+  margin: 55px auto;
+  .form-control {
+    background: #fff;
     padding: 18px 10px;
     font-size: 1.2em;
     border: 1px solid #ccc;
@@ -32,51 +28,6 @@
       padding: 7px 15px 6px 15px;
       font-size: 1em;
       font-weight: 300;
-    }
-  }
-
-  .call-to-action{
-    margin: 55px auto;
-    .form-control {
-      background: #fff;
-    }
-  }
-
-  .form-box {
-      margin: auto;
-      padding-top:20px;
-
-  }
-
-  .form-box h1 {
-      text-align: center;
-      font-weight: bold;
-      text-transform: uppercase;
-      color: rgba(169, 251, 255, 0.92);
-  }
-
-  .form-box h1 span {
-      font-weight: lighter;
-  }
-  .modal-footer{
-    border-top: none;
-  }
-  .modal-header{
-    background-color: #6eaede;
-    border-bottom: none;
-  }
-  .modal-body{
-    ::-webkit-input-placeholder {
-   color: rgba(0,0,0,0.5);;
-    }
-    :-moz-placeholder { /* Firefox 18- */
-       color: rgba(0,0,0,0.5);;
-    }
-    ::-moz-placeholder {  /* Firefox 19+ */
-       color: rgba(0,0,0,0.5);;
-    }
-    :-ms-input-placeholder {
-       color: rgba(0,0,0,0.5);;
     }
   }
 }

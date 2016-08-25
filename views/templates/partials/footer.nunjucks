@@ -1,0 +1,37 @@
+<!-- Footer -->
+<section class="call-to-action">
+  <h3>Claim your 14-day free trial. no credit card required.</h3>
+  <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
+</section>
+<footer>
+  <div class="footer-logo">
+    <img src="./assets/images/CorkCRM-logo.jpg" alt="logo"/>
+  </div>
+  <div class="container">
+    <h3>Get in touch &amp; keep in touch.</h3>
+    <div class="row">
+      <div class="col-sm-6 col-xs-12 contact">
+        <form>
+          <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Your email">
+          <textarea placeholder="Message goes here."></textarea>
+          <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+      </div>
+      <div class="col-sm-4">
+        <div class="footer-contact">
+          <div class="contact-info">
+            <p><i class="fa fa-phone" aria-hidden="true"></i> (877) 222-7488</p>
+            <p><i class="fa fa-envelope" aria-hidden="true"></i> email@email.com</p>
+          </div>
+          <div class="footer-links">
+            <ul>
+              <li><a href="features.html">Features</a></li>
+              <li><a href="customers.html">Customers</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

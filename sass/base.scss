@@ -1,0 +1,129 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+body.modal-open {
+  overflow: inherit;
+  padding-right: 0 !important;
+}
+section {
+  padding: 50px;
+}
+h1, h2, h3{
+  font-family: 'Open Sans', sans-serif;
+}
+h1 {
+  font-weight: 100;
+  font-size: 30px;
+}
+h2 {
+  font-size: 2.1em;
+  text-align: center;
+  font-weight: 100;
+}
+h3 {
+  font-weight: 200;
+}
+p {
+  margin: 0px;
+  font-size: 1.2em;
+}
+
+.btn, input {
+  border-radius: 0;
+}
+.btn.btn-brand {
+  border: 2px solid $brand-blue;
+  color: $brand-blue;
+  font-size: 1.2em;
+  &:hover {
+    background: $brand-blue;
+    color: #fff;
+  }
+}
+.form-control, input.form-control, textarea.form-control {
+  border-radius: 0;
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+.form-control {
+  background-color: rgba(0,0,0,0.1);
+  border-radius: 2px;
+  max-width: 250px;
+  display: block;
+  border: none;
+  color: #fff;
+  box-shadow: none;
+  &::placeholder {
+    color: rgba(255,255,255,0.5);
+  }
+}
+.input-group {
+  max-width: 240px;
+}
+.btn.btn-primary {
+  margin-top: 15px;
+  background-color: #4195ce;
+}
+.btn.btn-primary:hover {
+  border-color: rgba(0,0,0,0);
+  background-color: rgba(0,0,0,0.1);
+}
+textarea {
+  background-color: rgba(0,0,0,0.1);
+  max-width: 320px;
+  width: 100%;
+  height: 66px;
+  margin-top: 8px;
+  display: block;
+  color: #fff;
+  padding-left: 12px;
+  border: none;
+  border-radius: 2px;
+  &::placeholder {
+    color: rgba(255,255,255,0.5);
+  }
+}
+
+.navbar {
+  position: absolute;
+  background-color: transparent;
+}
+.navbar-brand > img{
+  width: 169px;
+}
+.navbar-brand{
+  padding: 20px 15px 15px 15px
+}
+.navbar-default .navbar-nav>li>a {
+  font-weight: 300;
+  border-top: solid transparent 4px;
+  color: rgba(255,255,255,0.85);
+  font-family: 'Lato', sans-serif;
+  font-size: 17px;
+  padding-top:20px;
+  &.active{
+    border-top: solid #fff 4px;
+  }
+  &.sign-up{
+    font-weight: 400;
+    border-top: solid transparent 4px;
+    color: #fff;
+    &.active{
+      border-top: solid transparent 0px;
+    }
+  }
+}
+.navbar-default .navbar-nav>li>a:hover {
+  color: #216eb2;
+}
+
+.navbar-default .navbar-brand {
+  color: #191919;
+}
+.navbar-default {
+  width: 100%;
+  border-style: none;
+  font-size: larger;
+}

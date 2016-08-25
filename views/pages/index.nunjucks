@@ -6,44 +6,42 @@
 {{nav.active('home')}}
 {% include "partials/hero-modal.nunjucks" %}
 
-<!-- Benefits -->
 <section class="workflow">
   <div class="container">
     <h2>Everything you need, from start to finish.</h2>
-    <div class="row">
-      <div class="workflow-step">
-        <div class="icon-wrapper">
+    <ul class="row">
+      <li>
+        <div class="coin-icon-wrapper">
           <i class="fa fa-users fa-4x cool-icon" aria-hidden="true"></i>
         </div>
         <h3>Track Leads</h3>
-      </div>
-      <div class="workflow-step">
-        <div class="icon-wrapper">
+      </li>
+      <li>
+        <div class="coin-icon-wrapper">
           <i class="fa fa-calendar fa-4x cool-icon" aria-hidden="true"></i>
         </div>
         <h3>Book Appointments</h3>
-      </div>
-      <div class="workflow-step">
-        <div class="icon-wrapper">
+      </li>
+      <li>
+        <div class="coin-icon-wrapper">
           <i class="fa fa-file-text-o fa-4x cool-icon" aria-hidden="true"></i>
         </div>
         <h3>Create Proposals</h3>
-      </div>
-      <div class="workflow-step">
-        <div class="icon-wrapper">
+      </li>
+      <li>
+        <div class="coin-icon-wrapper">
           <i class="fa fa-pencil fa-4x cool-icon" aria-hidden="true"></i>
         </div>
         <h3>Sign Contracts</h3>
-      </div>
-      <div class="workflow-step">
-        <div class="icon-wrapper">
+      </li>
+      <li>
+        <div class="coin-icon-wrapper">
           <i class="fa fa-briefcase fa-4x cool-icon" aria-hidden="true"></i>
         </div>
         <h3>Schedule Jobs</h3>
-      </div>
+      </li>
       <div class="arrow"></div>
-    </div>
-    </div>
+    </ul>
   </div>
 </section>
 <section class="benefits">
@@ -67,50 +65,33 @@
       <li class="col-sm-4">
         <h3>Keep crews on task</h3>
       </li>
-
     </ul>
     <h2>...Focus on <strong>painting</strong> not paperwork.</h3>
   </div>
 </section>
-<!-- Video case -->
 <section class="testimonials">
   <div class="container">
     <div class="row">
-      <!-- video card -->
-      {# <div class="col-xs-12 col-md-6 col-md-offset-3 video">
-      </div> #}
-      <!-- simple video -->
       <div class="col-xs-12 col-sm-6 video">
         <div class="embed-responsive embed-responsive-16by9">
           <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Wc9rj4-A6FI?showinfo=0"></iframe>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-6">
-      <div class="video-text">
+      <div class="col-xs-12 col-sm-6 video-text">
         <h3>What CorkCRM does for my business</h3>
         <p>"Donec sed odio dui. Cras justo odio, dapibus ac quam. Vestibulum id ligula porta felis euismod semper."</p>
         <div class="btn btn-brand">Learn more</div>
       </div>
     </div>
   </div>
-  </div>
 </section>
-<!-- Brand Strip -->
-<section>
-  <div class="brands">
-    <div class="container">
-      <div class="row">
-        {# <div class="col-md-12">
-          <h2>Some of our awesome users!</h2>
-        </div> #}
-      </div>
-      <div class="row">
-        <div class="col-sm-12 col-xs-12 brand-image">
-          <img src="assets/images/brand-logos-wide.png" alt="logo" />
-        </div>
-      </div>
+<section class="customers">
+  <div class="container">
+    <div class="customer-logos">
+      <img src="assets/images/brand-logos-wide.png" alt="logo" />
     </div>
   </div>
 </section>
-{% include "partials/footerLogo.nunjucks" %}
+
+{% include "partials/footer.nunjucks" %}
 {% endblock %}
