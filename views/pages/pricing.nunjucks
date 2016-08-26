@@ -3,46 +3,95 @@
 {% block content %}
 {% import "macros/nav-macro.nunjucks" as nav %}
 {{nav.active('pricing')}}
-  <section>
-    <div class="jumbotron">
-    <h2>Our Offers</h2>
-    </div>
-    <div class="container">
-      <div class="row">
-      <div class="col-sm-3">
+<div class="price-banner">
+  <div class="jumbotron price-banner-content">
+  <h2></h2>
+  </div>
+</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2"> </div>
+      <div class="col-sm-6 col-md-2">
         <div class="pricetag">
-        <h3>Bronze</h3>
-        <h2 class="price">$100</h2>
-        <hr>
-        <p>"Fusce dapibus,</p> tellus ac cursus </p><p>commodo, tortor</p><p>mauris condimentum nibh</p><p>ut fer Etiam </p><p>porta Donec </p><p>sed odio dui </p><p>malesuada magna</p>
-      </div>
-    </div>
-      <div class="col-sm-3">
-        <div class="pricetag">
-        <h3>Silver</h3>
-        <h2 class="price">$100</h2>
-        <hr>
-        <p>"Fusce dapibus,</p> tellus ac cursus </p><p>commodo, tortor</p><p>mauris condimentum nibh</p><p>ut fer Etiam </p><p>porta Donec </p><p>sed odio dui </p><p>malesuada magna</p>
+          <div class="line">
+          </div>
+          <div class="coin-icon-wrapper">
+            <h2 class="price">$50</h2>
+          </div>
+          <h3>Bronze</h3>
+          <ul>
+            <li>Fusce dapibus</li>
+            <li>tellus ac cursus</li>
+            <li>commodo, tortor</li>
+            <li>condimentum nibh</li>
+            <li>ut fer Etiam </li>
+            <li>porta Donec </li>
+            <li>sed odio dui </li>
+            <li>malesuada magna</li>
+          </ul>
         </div>
       </div>
-      <div class="col-sm-3">
+      <div class="col-sm-6 col-md-2">
         <div class="pricetag">
-        <h3>Gold</h3>
-        <h2 class="price">$100</h2>
-        <hr>
-        <p>"Fusce dapibus,</p> tellus ac cursus </p><p>commodo, tortor</p><p>mauris condimentum nibh</p><p>ut fer Etiam </p><p>porta Donec </p><p>sed odio dui </p><p>malesuada magna</p>
+          <div class="line">
+          </div>
+          <div class="coin-icon-wrapper">
+            <h2 class="price">$100</h2>
+          </div>
+          <h3>Silver</h3>
+          <ul>
+            <li>Fusce dapibus</li>
+            <li>tellus ac cursus</li>
+            <li>commodo, tortor</li>
+            <li>condimentum nibh</li>
+            <li>ut fer Etiam </li>
+            <li>porta Donec </li>
+            <li>sed odio dui </li>
+            <li>malesuada magna</li>
+          </ul>
+        </div>
       </div>
-    </div>
-      <div class="col-sm-3">
+      <div class="col-sm-6 col-md-2">
         <div class="pricetag">
-        <h3>Enterprise</h3>
-        <h2 class="price">$100</h2>
-        <hr>
-        <p>"Fusce dapibus,</p> tellus ac cursus </p><p>commodo, tortor</p><p>mauris condimentum nibh</p><p>ut fer Etiam </p><p>porta Donec </p><p>sed odio dui </p><p>malesuada magna</p>
+          <div class="line">
+          </div>
+          <div class="coin-icon-wrapper">
+            <h2 class="price">$150</h2>
+          </div>
+          <h3>Gold</h3>
+          <ul>
+            <li>Fusce dapibus</li>
+            <li>tellus ac cursus</li>
+            <li>commodo, tortor</li>
+            <li>condimentum nibh</li>
+            <li>ut fer Etiam </li>
+            <li>porta Donec </li>
+            <li>sed odio dui </li>
+            <li>malesuada magna</li>
+          </ul>
+        </div>
       </div>
-    </div>
+      <div class="col-sm-6 col-md-2">
+        <div class="pricetag">
+          <div class="line">
+          </div>
+          <div class="coin-icon-wrapper">
+            <h2 class="price">Call </h2>
+          </div>
+          <h3>Enterprise</h3>
+          <ul>
+            <li>Fusce dapibus</li>
+            <li>tellus ac cursus</li>
+            <li>commodo, tortor</li>
+            <li>condimentum nibh</li>
+            <li>ut fer Etiam </li>
+            <li>porta Donec </li>
+            <li>sed odio dui </li>
+            <li>malesuada magna</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
-</section>
 {% include "partials/footer.nunjucks" %}
 {% endblock %}

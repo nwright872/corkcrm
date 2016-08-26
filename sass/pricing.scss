@@ -1,0 +1,108 @@
+.price-banner {
+  background: url('/assets/images/paint-texture.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  padding: 0;
+  .price-banner-content {
+    background: rgba(255,255,255,0.1);
+    padding: 55px;
+    padding-top: 40px;
+
+    // background-color: $brand-blue;
+    text-align: center;
+    top: 50%;
+    color: white;
+    margin-bottom: 0px;
+    padding: 0px;
+    h2{
+      margin-top: 0px;
+      // margin-bottom: 100px
+    }
+  }
+}
+
+.pricetag{
+  // margin: 20px;
+  margin-bottom: 35px;
+  margin-top: 45px;
+  // padding: 20px;
+  padding-bottom: 20px;
+  padding-top: 0;
+  background-color: #458fc2;
+  color: #fff;
+  border-radius: 8px;
+  text-align: center;
+  .price {
+    font-size: .9em;
+    width: 97px;
+    color: $brand-blue;
+  }
+  h3{
+    z-index: 2;
+    height: 48px;
+    line-height: 40px;
+    border-radius: 3px;
+    margin: 0 -20px;
+    font-weight: 100;
+    // background-color: #334044;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    padding-top: 20px;
+  }
+  li {
+    list-style: none;
+    text-align: center;
+  }
+  .line{
+    content: "";
+    display: none;
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-width: 0 0 0 4px;
+    width: 9px;
+    height: 35px;
+    background-color: #fff;
+  }
+  .coin-icon-wrapper .price{
+    transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, transform 0.3s ease;
+    background: $brand-blue;
+    color: #fff;
+    border-radius: 50%;
+    border: 3px solid $brand-blue;
+    padding:30px;
+    margin:10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 1.9em;
+    &:after {
+      border-width:3px;
+      top:0px;
+      left:0px;
+    }
+  }
+  .coin-icon-wrapper {
+    border-radius: 110%;
+    display: inline-block;
+    perspective: 301px;
+    margin: auto;
+    background: #fff;
+    margin-top: 36px;
+    margin-bottom: 20px;
+    &:hover .price{
+      transform: rotateY(360deg);
+      border-color: $brand-blue;
+      color: $brand-blue;
+      background-color: #fff;
+      top: 0px;
+      left: 0px;
+      position: relative;
+      cursor: pointer;
+    }
+  }
+}

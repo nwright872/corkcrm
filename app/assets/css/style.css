@@ -5258,16 +5258,6 @@ textarea {
 .userlogo {
   width: 50%; }
 
-.pricetag {
-  margin-left: 20px;
-  margin-bottom: 35px;
-  padding: 20px;
-  background-color: #eee;
-  text-align: center; }
-
-.price {
-  font-weight: bold; }
-
 hr {
   border-top: 1px dashed #8c8b8b; }
 
@@ -5288,6 +5278,100 @@ hr {
 @media (max-width: 480px) {
   .workflow h3 {
     font-size: 19px; } }
+
+.price-banner {
+  background: url("/assets/images/paint-texture.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  padding: 0; }
+  .price-banner .price-banner-content {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 55px;
+    padding-top: 40px;
+    text-align: center;
+    top: 50%;
+    color: white;
+    margin-bottom: 0px;
+    padding: 0px; }
+    .price-banner .price-banner-content h2 {
+      margin-top: 0px; }
+
+.pricetag {
+  margin-bottom: 35px;
+  margin-top: 45px;
+  padding-bottom: 20px;
+  padding-top: 0;
+  background-color: #458fc2;
+  color: #fff;
+  border-radius: 8px;
+  text-align: center; }
+  .pricetag .price {
+    font-size: .9em;
+    width: 97px;
+    color: #458fc2; }
+  .pricetag h3 {
+    z-index: 2;
+    height: 48px;
+    line-height: 40px;
+    border-radius: 3px;
+    margin: 0 -20px;
+    font-weight: 100; }
+  .pricetag ul {
+    list-style: none;
+    padding: 0;
+    padding-top: 20px; }
+  .pricetag li {
+    list-style: none;
+    text-align: center; }
+  .pricetag .line {
+    content: "";
+    display: none;
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-width: 0 0 0 4px;
+    width: 9px;
+    height: 35px;
+    background-color: #fff; }
+  .pricetag .coin-icon-wrapper .price {
+    transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, -webkit-transform 0.3s ease;
+    transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, transform 0.3s ease;
+    transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
+    background: #458fc2;
+    color: #fff;
+    border-radius: 50%;
+    border: 3px solid #458fc2;
+    padding: 30px;
+    margin: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 1.9em; }
+    .pricetag .coin-icon-wrapper .price:after {
+      border-width: 3px;
+      top: 0px;
+      left: 0px; }
+  .pricetag .coin-icon-wrapper {
+    border-radius: 110%;
+    display: inline-block;
+    -webkit-perspective: 301px;
+    perspective: 301px;
+    margin: auto;
+    background: #fff;
+    margin-top: 36px;
+    margin-bottom: 20px; }
+    .pricetag .coin-icon-wrapper:hover .price {
+      -webkit-transform: rotateY(360deg);
+      transform: rotateY(360deg);
+      border-color: #458fc2;
+      color: #458fc2;
+      background-color: #fff;
+      top: 0px;
+      left: 0px;
+      position: relative;
+      cursor: pointer; }
 
 .hero {
   background: url("/assets/images/paint-texture.jpg");
