@@ -1,11 +1,11 @@
 .price-banner {
-  background: url('/assets/images/paint-texture.jpg');
+  background-color: #fff;
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
   padding: 0;
   .price-banner-content {
-    background: rgba(255,255,255,0.1);
+    // background: rgba(255,255,255,0.1);
     padding: 55px;
     padding-top: 40px;
 
@@ -16,18 +16,23 @@
     margin-bottom: 0px;
     padding: 0px;
     h2{
-      margin-top: 0px;
-      // margin-bottom: 100px
+    margin-top: -22px;
     }
   }
 }
 
+.price-list {
+  h2{
+    margin-bottom: 70px;
+    margin-top: 70px;
+  }
+}
+
 .pricetag{
-  // margin: 20px;
+  margin: 20px;
   margin-bottom: 35px;
   margin-top: 45px;
-  // padding: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 0;
   padding-top: 0;
   background-color: #458fc2;
   color: #fff;
@@ -40,21 +45,37 @@
   }
   h3{
     z-index: 2;
-    height: 48px;
-    line-height: 40px;
     border-radius: 3px;
-    margin: 0 -20px;
+    margin: 17px;
     font-weight: 100;
     // background-color: #334044;
   }
   ul {
     list-style: none;
-    padding: 0;
-    padding-top: 20px;
+    padding: 0 0 20px 0;
+    margin-bottom: 0;
+    border-bottom: 4px solid #fff;
   }
   li {
     list-style: none;
     text-align: center;
+  }
+  .btn.btn-primary {
+    a: 15px;
+    margin: -1px 0px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    background-color: #334044;
+  }
+  .btn.btn-primary:hover {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    // color: $brand-blue;
+    background-color: darken(#334044, 5%);
+    font-weight: 700;
   }
   .line{
     content: "";
@@ -70,13 +91,13 @@
     background-color: #fff;
   }
   .coin-icon-wrapper .price{
-    transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, transform 0.3s ease;
+    transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, transform 0.4s ease;
     background: $brand-blue;
     color: #fff;
     border-radius: 50%;
     border: 3px solid $brand-blue;
     padding:30px;
-    margin:10px;
+    margin:3px;
     padding-right: 15px;
     padding-left: 15px;
     font-size: 1.9em;
@@ -92,8 +113,7 @@
     perspective: 301px;
     margin: auto;
     background: #fff;
-    margin-top: 36px;
-    margin-bottom: 20px;
+    margin-top: -60px;
     &:hover .price{
       transform: rotateY(360deg);
       border-color: $brand-blue;
@@ -104,5 +124,29 @@
       position: relative;
       cursor: pointer;
     }
+  }
+  // .coin-icon-wrapper:nth-child(1) {
+  //   background-color: #a58857;
+  //   border-color: #a58857;
+  // }
+  // .coin-icon-wrapper:nth-child(2) {
+  //   background-color: #c1c1c1;
+  //   border-color: #c1c1c1;
+  // }
+  // .coin-icon-wrapper:nth-child(3) {
+  //   background-color: #c39007;
+  //   border-color: #c39007;
+  // }
+  // .coin-icon-wrapper:nth-child(4) {
+  //   background-color: #216eb2;
+  //   border-color: #216eb2;
+  // }
+}
+.price-page{
+  .call-to-action{
+    display: none!important;
+  }
+  footer{
+    margin-top: 50px;
   }
 }

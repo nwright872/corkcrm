@@ -5107,6 +5107,23 @@ textarea {
   border-style: none;
   font-size: larger; }
 
+.non-homepage-nav .navbar {
+  background-color: #fff;
+  margin-bottom: 0px; }
+
+.non-homepage-nav .navbar-default .navbar-nav > li > a {
+  color: #000; }
+  .non-homepage-nav .navbar-default .navbar-nav > li > a:hover {
+    color: #458fc2; }
+  .non-homepage-nav .navbar-default .navbar-nav > li > a.active {
+    border-top: solid #334044 4px; }
+  .non-homepage-nav .navbar-default .navbar-nav > li > a.sign-up {
+    color: #000; }
+    .non-homepage-nav .navbar-default .navbar-nav > li > a.sign-up:hover {
+      color: #458fc2; }
+    .non-homepage-nav .navbar-default .navbar-nav > li > a.sign-up.active {
+      border-top: solid #334044 0px; }
+
 .input-group .form-control {
   color: #555; }
 
@@ -5280,13 +5297,12 @@ hr {
     font-size: 19px; } }
 
 .price-banner {
-  background: url("/assets/images/paint-texture.jpg");
+  background-color: #fff;
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
   padding: 0; }
   .price-banner .price-banner-content {
-    background: rgba(255, 255, 255, 0.1);
     padding: 55px;
     padding-top: 40px;
     text-align: center;
@@ -5295,12 +5311,17 @@ hr {
     margin-bottom: 0px;
     padding: 0px; }
     .price-banner .price-banner-content h2 {
-      margin-top: 0px; }
+      margin-top: -22px; }
+
+.price-list h2 {
+  margin-bottom: 70px;
+  margin-top: 70px; }
 
 .pricetag {
+  margin: 20px;
   margin-bottom: 35px;
   margin-top: 45px;
-  padding-bottom: 20px;
+  padding-bottom: 0;
   padding-top: 0;
   background-color: #458fc2;
   color: #fff;
@@ -5312,18 +5333,31 @@ hr {
     color: #458fc2; }
   .pricetag h3 {
     z-index: 2;
-    height: 48px;
-    line-height: 40px;
     border-radius: 3px;
-    margin: 0 -20px;
+    margin: 17px;
     font-weight: 100; }
   .pricetag ul {
     list-style: none;
-    padding: 0;
-    padding-top: 20px; }
+    padding: 0 0 20px 0;
+    margin-bottom: 0;
+    border-bottom: 4px solid #fff; }
   .pricetag li {
     list-style: none;
     text-align: center; }
+  .pricetag .btn.btn-primary {
+    a: 15px;
+    margin: -1px 0px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    background-color: #334044; }
+  .pricetag .btn.btn-primary:hover {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background-color: #283235;
+    font-weight: 700; }
   .pricetag .line {
     content: "";
     display: none;
@@ -5337,15 +5371,15 @@ hr {
     height: 35px;
     background-color: #fff; }
   .pricetag .coin-icon-wrapper .price {
-    transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, -webkit-transform 0.3s ease;
-    transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, transform 0.3s ease;
-    transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
+    transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, -webkit-transform 0.4s ease;
+    transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, transform 0.4s ease;
+    transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, transform 0.4s ease, -webkit-transform 0.4s ease;
     background: #458fc2;
     color: #fff;
     border-radius: 50%;
     border: 3px solid #458fc2;
     padding: 30px;
-    margin: 10px;
+    margin: 3px;
     padding-right: 15px;
     padding-left: 15px;
     font-size: 1.9em; }
@@ -5360,8 +5394,7 @@ hr {
     perspective: 301px;
     margin: auto;
     background: #fff;
-    margin-top: 36px;
-    margin-bottom: 20px; }
+    margin-top: -60px; }
     .pricetag .coin-icon-wrapper:hover .price {
       -webkit-transform: rotateY(360deg);
       transform: rotateY(360deg);
@@ -5372,6 +5405,15 @@ hr {
       left: 0px;
       position: relative;
       cursor: pointer; }
+
+.price-page .call-to-action {
+  display: none !important; }
+
+.price-page footer {
+  margin-top: 50px; }
+
+.customer-header {
+  margin: 70px; }
 
 .hero {
   background: url("/assets/images/paint-texture.jpg");

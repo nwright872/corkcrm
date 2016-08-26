@@ -127,3 +127,27 @@ textarea {
   border-style: none;
   font-size: larger;
 }
+.non-homepage-nav{
+  .navbar {
+    background-color: #fff;
+    margin-bottom: 0px;
+  }
+  .navbar-default .navbar-nav > li > a {
+    color: #000;
+    &:hover{
+      color: $brand-blue;
+    }
+    &.active{
+      border-top: solid #334044 4px;
+    }
+    &.sign-up{
+      color: #000;
+      &:hover{
+        color: $brand-blue;
+      }
+      &.active{
+        border-top: solid #334044 0px;
+      }
+    }
+  }
+}
