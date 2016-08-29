@@ -5325,7 +5325,6 @@ hr {
   padding-top: 0;
   background-color: #458fc2;
   color: #fff;
-  border-radius: 8px;
   text-align: center; }
   .pricetag .price {
     font-size: .9em;
@@ -5352,11 +5351,11 @@ hr {
     padding: 10px;
     border: none;
     width: 100%;
-    background-color: #334044; }
+    background-color: #2a5674; }
   .pricetag .btn.btn-primary:hover {
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
-    background-color: #283235;
+    background-color: #234861;
     font-weight: 700; }
   .pricetag .line {
     content: "";
@@ -5374,14 +5373,14 @@ hr {
     transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, -webkit-transform 0.4s ease;
     transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, transform 0.4s ease;
     transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, transform 0.4s ease, -webkit-transform 0.4s ease;
-    background: #458fc2;
-    color: #fff;
+    background: #fff;
+    color: #458fc2;
     border-radius: 50%;
-    border: 3px solid #458fc2;
+    border: 2px solid #458fc2;
     padding: 30px;
     margin: 3px;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 16px;
+    padding-left: 16px;
     font-size: 1.9em; }
     .pricetag .coin-icon-wrapper .price:after {
       border-width: 3px;
@@ -5394,7 +5393,7 @@ hr {
     perspective: 301px;
     margin: auto;
     background: #fff;
-    margin-top: -60px; }
+    margin-top: 25px; }
     .pricetag .coin-icon-wrapper:hover .price {
       -webkit-transform: rotateY(360deg);
       transform: rotateY(360deg);
@@ -5465,7 +5464,7 @@ hr {
 footer {
   padding: 45px;
   padding-top: 0px;
-  background-color: #334044;
+  background-color: #2a5674;
   border-top: 4px solid #fff;
   color: white; }
   footer h3 {

@@ -28,7 +28,7 @@
   }
 }
 
-.pricetag{
+.pricetag {
   margin: 20px;
   margin-bottom: 35px;
   margin-top: 45px;
@@ -36,7 +36,6 @@
   padding-top: 0;
   background-color: #458fc2;
   color: #fff;
-  border-radius: 8px;
   text-align: center;
   .price {
     font-size: .9em;
@@ -68,13 +67,13 @@
     padding: 10px;
     border: none;
     width: 100%;
-    background-color: #334044;
+    background-color: #2a5674;
   }
   .btn.btn-primary:hover {
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
     // color: $brand-blue;
-    background-color: darken(#334044, 5%);
+    background-color: darken(#2a5674, 5%);
     font-weight: 700;
   }
   .line{
@@ -92,14 +91,14 @@
   }
   .coin-icon-wrapper .price{
     transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, transform 0.4s ease;
-    background: $brand-blue;
-    color: #fff;
+    background: #fff;
+    color: $brand-blue;
     border-radius: 50%;
-    border: 3px solid $brand-blue;
+    border: 2px solid $brand-blue;
     padding:30px;
     margin:3px;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 16px;
+    padding-left: 16px;
     font-size: 1.9em;
     &:after {
       border-width:3px;
@@ -113,7 +112,7 @@
     perspective: 301px;
     margin: auto;
     background: #fff;
-    margin-top: -60px;
+    margin-top: 25px;
     &:hover .price{
       transform: rotateY(360deg);
       border-color: $brand-blue;
@@ -125,22 +124,6 @@
       cursor: pointer;
     }
   }
-  // .coin-icon-wrapper:nth-child(1) {
-  //   background-color: #a58857;
-  //   border-color: #a58857;
-  // }
-  // .coin-icon-wrapper:nth-child(2) {
-  //   background-color: #c1c1c1;
-  //   border-color: #c1c1c1;
-  // }
-  // .coin-icon-wrapper:nth-child(3) {
-  //   background-color: #c39007;
-  //   border-color: #c39007;
-  // }
-  // .coin-icon-wrapper:nth-child(4) {
-  //   background-color: #216eb2;
-  //   border-color: #216eb2;
-  // }
 }
 .price-page{
   .call-to-action{
