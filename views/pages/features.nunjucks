@@ -10,41 +10,46 @@
   <div class="jumbotron feature-banner-content">
   </div>
 </div>
-<div class="container">
-  <h2>Below you'll find the features that matter most</h2>
-    <div class="section features">
-    <div class="row feature">
-      <div class="col-sm-6">
+<div class="container features">
+  
+  <div class="row">
+    <div class="col-md-9 pull-right">
+      <h2 class="page-heading">Below you'll find the features that matter most</h2>
+      <section id="feature1" class="row feature">
+        <div class="col-md-6">
+          <h2>Feature One</h2>
+          <p>Lorem ipsum dolor sit amet, autem audire cum eu, virtute pertinax adolescens vim no, sit idque accumsan honestatis cu. Qui in magna nemore, no pro tota omnesque petentium. Munere expetenda at vis. Ne eripuit appareat mei, ex quod senserit corrumpit quo. Eu cum modus indoctum abhorreant, quo no commune facilisis assueverit.</p>
+        </div>
+        <div class="col-md-6">
+          <div class="embed-responsive embed-responsive-16by9">
+            <img src="assets/images/animation.gif" alt="placeholder" />
+          </div>
+        </div>
+      </section>
+      <section id="feature2" class="row feature">
         <h2>Feature One</h2>
         <p>Lorem ipsum dolor sit amet, autem audire cum eu, virtute pertinax adolescens vim no, sit idque accumsan honestatis cu. Qui in magna nemore, no pro tota omnesque petentium. Munere expetenda at vis. Ne eripuit appareat mei, ex quod senserit corrumpit quo. Eu cum modus indoctum abhorreant, quo no commune facilisis assueverit.</p>
-      </div>
-      <div class="col-sm-6">
-        <div class="embed-responsive embed-responsive-16by9">
-          <img src="assets/images/animation.gif" alt="placeholder" />
-        </div>
-      </div>
-    </div>
-    <div class="row feature">
-      <div class="col-xs-12 col-sm-6 col-sm-push-6">
-        <h2>Feature Two</h2>
+      </section>
+      <section id="feature3" class="row feature">
+        <h2>Feature One</h2>
         <p>Lorem ipsum dolor sit amet, autem audire cum eu, virtute pertinax adolescens vim no, sit idque accumsan honestatis cu. Qui in magna nemore, no pro tota omnesque petentium. Munere expetenda at vis. Ne eripuit appareat mei, ex quod senserit corrumpit quo. Eu cum modus indoctum abhorreant, quo no commune facilisis assueverit.</p>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-sm-pull-6">
-        <div class="embed-responsive embed-responsive-16by9">
-          <img src="assets/images/animation2.gif" alt="placeholder" />
-        </div>
-      </div>
-    </div>
-    <div class="row feature">
-      <div class="col-sm-6">
-        <h2>Feature Three</h2>
+      </section>
+      <section id="feature4" class="row feature">
+        <h2>Feature One</h2>
         <p>Lorem ipsum dolor sit amet, autem audire cum eu, virtute pertinax adolescens vim no, sit idque accumsan honestatis cu. Qui in magna nemore, no pro tota omnesque petentium. Munere expetenda at vis. Ne eripuit appareat mei, ex quod senserit corrumpit quo. Eu cum modus indoctum abhorreant, quo no commune facilisis assueverit.</p>
-      </div>
-      <div class="col-sm-6">
-        <div class="embed-responsive embed-responsive-16by9">
-          <img src="assets/images/animation.gif" alt="placeholder" />
-        </div>
-      </div>
+      </section>
+    </div>
+    <div class="col-md-3">
+      <aside class="features-sidebar">
+        <nav id="side-nav" role="navigation">
+          <ul class="nav">
+            <li><a href="#feature1">Feature 1</a></li>
+            <li><a href="#feature2">Feature 2</a></li>
+            <li><a href="#feature3">Feature 3</a></li>
+            <li><a href="#feature4">Feature 4</a></li>
+          </ul>
+        </nav>
+      </aside>
     </div>
   </div>
 </div>

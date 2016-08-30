@@ -4977,7 +4977,8 @@ button.close {
     display: none !important; } }
 
 body {
-  font-family: 'Lato', sans-serif; }
+  font-family: 'Lato', sans-serif;
+  position: relative; }
 
 body.modal-open {
   overflow: inherit;
@@ -5004,6 +5005,9 @@ h3 {
 p {
   margin: 0px;
   font-size: 1.2em; }
+
+.page-heading {
+  margin-top: 150px; }
 
 .btn, input {
   border-radius: 0; }
@@ -5301,10 +5305,14 @@ hr {
 .features {
   padding-top: 30px;
   padding-bottom: 30px; }
+  .features section h2 {
+    text-align: left; }
 
-section h2 {
-  margin-bottom: 70px;
-  margin-top: 150px; }
+aside.features-sidebar {
+  position: fixed;
+  top: 200px; }
+  aside.features-sidebar li.active a {
+    background: #ccc; }
 
 .price-banner {
   background-color: #fff;

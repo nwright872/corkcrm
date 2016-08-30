@@ -1,5 +1,6 @@
 body {
   font-family: 'Lato', sans-serif;
+  position: relative;
 }
 body.modal-open {
   overflow: inherit;
@@ -27,7 +28,9 @@ p {
   margin: 0px;
   font-size: 1.2em;
 }
-
+.page-heading {
+  margin-top: 150px;
+}
 .btn, input {
   border-radius: 0;
 }

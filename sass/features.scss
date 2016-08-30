@@ -23,10 +23,21 @@
 .features {
   padding-top: 30px;
   padding-bottom: 30px;
+  section{
+    h2{
+      text-align: left;
+    }
+  }
 }
-section{
-  h2{
-    margin-bottom: 70px;
-    margin-top: 150px;
+
+aside.features-sidebar {
+  position: fixed;
+  top: 200px;
+  li {
+    &.active {
+      a {
+        background: #ccc;
+      }
+    }
   }
 }

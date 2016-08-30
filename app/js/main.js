@@ -1,28 +1,18 @@
-document.getElementById("contact-form").onsubmit = function() {
-    //Validate Name
-    if(document.getElementById("form-name-field").value === "") {
-        document.getElementById("nameError").innerHTML = "Invalid Name! Please try again.";
-        document.getElementById("nameError").className = "alert alert-danger";
-        document.getElementById("nameError").style.display = "block";
+//SMOOTH SCROLLING
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 600);
+        return false;
+      }
     }
-  //Validate Email
-   if(document.getElementById("form-email-field").value === "") {
-        document.getElementById("emailError").innerHTML = "Invalid Email! Please try again.";
-        document.getElementById("emailError").className = "alert alert-danger";
-        document.getElementById("emailError").style.display = "block";
-    }
-  //Validate Phone
-   if(document.getElementById("form-email-field").value == "") {
-        document.getElementById("phoneError").innerHTML = "Invalid Phone Number! Please try again.";
-        document.getElementById("phoneError").className = "alert alert-danger";
-        document.getElementById("phoneError").style.display = "block";
-    }
- }
-document.getElementById("term-field").style.display = "none";
-document.getElementById("checkbox-form").onclick = function() {
-  if(document.getElementById("checkbox-form").checked) {
-    document.getElementById("term-field").style.display = "block";
-  } else {
-    document.getElementById("term-field").style.display = "none";
-  }
-}
+  });
+});
+
+//BOOTSTRAP SCROLLSPY
+$('body').scrollspy({ target: '#side-nav' });
