@@ -1,15 +1,18 @@
 {% extends "layout.nunjucks" %}
-
 {% block content %}
+
 <div class="non-homepage-nav">
 {% import "macros/nav-macro.nunjucks" as nav %}
 {{nav.active('features')}}
 </div>
-  <content>
-    <div class="jumbotron">
-      <h2>Features</h2>
-    </div>
-    <div class="container features">
+
+<div class="feature-banner">
+  <div class="jumbotron feature-banner-content">
+  </div>
+</div>
+<div class="section">
+  <h2>Below you'll find the features that matter most</h2>
+    <div class="section features">
     <div class="row feature">
       <div class="col-sm-6">
         <h2>Feature One</h2>
@@ -44,7 +47,8 @@
       </div>
     </div>
   </div>
-  </content>
+</div>
+
 
 {% include "partials/footer.nunjucks" %}
 {% endblock %}

@@ -5251,20 +5251,6 @@ textarea {
 .brands h2 {
   margin-bottom: 30px; }
 
-.feature {
-  margin-top: 40px;
-  margin-bottom: 40px; }
-
-.feature img {
-  width: 100%; }
-
-.feature:nth-child(odd) {
-  background: #eee; }
-
-.features {
-  padding-top: 30px;
-  padding-bottom: 30px; }
-
 .user {
   text-align: center; }
 
@@ -5295,6 +5281,30 @@ hr {
 @media (max-width: 480px) {
   .workflow h3 {
     font-size: 19px; } }
+
+.feature-banner-content {
+  padding: 55px;
+  padding-top: 40px;
+  text-align: center;
+  top: 50%;
+  color: white;
+  margin-bottom: 0px;
+  padding: 0px; }
+
+.feature {
+  margin-top: 40px;
+  margin-bottom: 40px; }
+
+.feature img {
+  width: 100%; }
+
+.features {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+section h2 {
+  margin-bottom: 70px;
+  margin-top: 150px; }
 
 .price-banner {
   background-color: #fff;
