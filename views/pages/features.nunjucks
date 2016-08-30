@@ -10,7 +10,7 @@
   <div class="jumbotron feature-banner-content">
   </div>
 </div>
-<div class="section">
+<div class="container">
   <h2>Below you'll find the features that matter most</h2>
     <div class="section features">
     <div class="row feature">
