@@ -5007,8 +5007,8 @@ p {
   font-size: 1.2em; }
 
 .page-heading {
-  margin-top: 100px;
-  margin-bottom: 70px; }
+  margin-top: 80px;
+  margin-bottom: 90px; }
   .page-heading h1 {
     text-align: center;
     font-weight: 600; }
@@ -5315,8 +5315,16 @@ hr {
   width: 100%; }
 
 aside.features-sidebar {
-  position: fixed;
-  top: 200px; }
+  padding-top: 50px;
+  position: absolute;
+  -webkit-backface-visibility: hidden; }
+  aside.features-sidebar.affix-top {
+    top: 0px; }
+  aside.features-sidebar.affix {
+    position: fixed;
+    top: 100px; }
+  aside.features-sidebar.affix-bottom {
+    top: auto; }
   aside.features-sidebar li.active a {
     background: #ccc; }
 

@@ -36,52 +36,53 @@
           </div>
         </div>
         <div class="col-md-12">
-          <h2><span class="step-number">1</span>Book An Appointment</h2>
+          <h2><span class="step-number">2</span>Book An Appointment</h2>
           <p>Lorem ipsum dolor sit amet, autem audire cum eu.</p>
         </div>
       </section>
       <section id="feature3" class="row feature">
-        <div class="col-md-6">
+        <div class="col-md-12">
           <div class="embed-responsive embed-responsive-16by9 feature-animation">
             <img src="assets/images/cork-app.gif" alt="placeholder" />
           </div>
         </div>
-        <div class="col-md-6">
-          <h2>Send A Proposal</h2>
+        <div class="col-md-12">
+          <h2><span class="step-number">3</span>Send A Proposal</h2>
           <p>Lorem ipsum dolor sit amet, autem audire cum eu.</p>
         </div>
       </section>
       <section id="feature4" class="row feature">
-        <div class="col-md-6">
+        <div class="col-md-12">
           <div class="embed-responsive embed-responsive-16by9 feature-animation">
             <img src="assets/images/cork-app.gif" alt="placeholder" />
           </div>
         </div>
-        <div class="col-md-6 pull-right">
-          <h2>Sign The Contract</h2>
+        <div class="col-md-12">
+          <h2><span class="step-number">4</span>Sign The Contract</h2>
           <p>Lorem ipsum dolor sit amet, autem audire cum eu.</p>
         </div>
       </section>
       <section id="feature5" class="row feature">
-        <div class="col-md-6">
+        <div class="col-md-12">
           <div class="embed-responsive embed-responsive-16by9 feature-animation">
             <img src="assets/images/cork-app.gif" alt="placeholder" />
           </div>
         </div>
-        <div class="col-md-6">
-          <h2>And Schedule The Job</h2>
+        <div class="col-md-12">
+          <h2><span class="step-number">5</span>Schedule The Job</h2>
           <p>Lorem ipsum dolor sit amet, autem audire cum eu.</p>
         </div>
       </section>
     </div>
     <div class="col-md-3">
-      <aside class="features-sidebar">
+      <aside class="features-sidebar" data-spy="affix" data-offset-top="290" data-offset-bottom="700">
         <nav id="side-nav" role="navigation">
           <ul class="nav">
-            <li><a href="#feature1">Feature 1</a></li>
-            <li><a href="#feature2">Feature 2</a></li>
-            <li><a href="#feature3">Feature 3</a></li>
-            <li><a href="#feature4">Feature 4</a></li>
+            <li><a href="#feature1">Create a new lead</a></li>
+            <li><a href="#feature2">Book an appointment</a></li>
+            <li><a href="#feature3">Send a proposal</a></li>
+            <li><a href="#feature4">Sign the contract</a></li>
+            <li><a href="#feature5">Schedule your job</a></li>
           </ul>
         </nav>
       </aside>

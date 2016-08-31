@@ -34,8 +34,20 @@
 }
 
 aside.features-sidebar {
-  position: fixed;
-  top: 200px;
+  padding-top: 50px;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  &.affix-top {
+    top: 0px;
+  }
+  &.affix {
+    position: fixed;
+    top: 100px;
+  }
+  &.affix-bottom {
+    top: auto;
+
+  }
   li {
     &.active {
       a {
